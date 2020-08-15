@@ -1,0 +1,44 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 1rem 2rem;
+
+  .ilnlogo {
+    width: 30rem;
+    position: relative;
+  }
+
+  .logo {
+    width: 12rem;
+  }
+
+  .logo_square {
+    position: absolute;
+    height: .4rem;
+    width: .4rem;
+    background-color: firebrick;
+    top: .8rem;
+    left: .62rem;
+
+    animation: logoGlow 3s linear 2s infinite;
+  }
+
+  @keyframes logoGlow {
+    0% {
+      background-color: #ff0000;
+    }
+
+    25% {
+      background-color: #00eeff;
+    }
+
+    50% {
+      background-color: #ffee02;
+    }
+
+    100% {
+      background-color: #ff0000;
+    }
+  }
+}
