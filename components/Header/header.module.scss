@@ -3,7 +3,11 @@
   align-items: center;
   justify-content: flex-start;
   padding: 1rem 1rem;
-
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  
   .ilnlogo {
     width: 30rem;
     position: relative;

@@ -1,9 +1,10 @@
 import "./homepage.module.scss";
+import Hero from "../Hero/hero.cmp";
 
 const HomePage = () => {
   return (
-    <div className="header">
-      <h1>Homepage</h1>
+    <div className="home-page">
+      <Hero/>
     </div>
   );
 };
