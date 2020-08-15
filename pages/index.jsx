@@ -1,10 +1,11 @@
 import Layout from '../components/Layout/layout.cmp';
-import './style.scss'
+import './style.scss';
+import Homepage from "../components/Home-page/homepage.cmp";
 
 const Index =()=> {
   return (
     <Layout>
-      <h1>Hello World.</h1>
+      <Homepage/>
     </Layout>
   )
 }
