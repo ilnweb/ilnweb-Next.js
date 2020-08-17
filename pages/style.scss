@@ -20,12 +20,29 @@ h1{
 }
 
 button{
-  background-color:#7CBD1E;
+  
   padding:1.2rem 3rem;
   border-radius: 100px;
-  color:white;
+  
   border: none;
   font-size: 1rem;
   font-weight: 700;
   font-family: 'Exo 2', sans-serif;
+  cursor: pointer;
+}
+
+.button-primary{
+  background-color:#7CBD1E;
+  color:white;
+}
+
+.button-secondary{
+  padding:1rem 3rem;
+  background-color:transparent;
+  border:1.5px solid rgb(255, 0, 170)
+}
+
+.content{
+  width: 100%;
+  box-sizing:border-box;
 }

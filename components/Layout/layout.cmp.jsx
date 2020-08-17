@@ -4,7 +4,7 @@ import Header from "../Header/header.cmp";
 
 export default function Layout({ children, title = "ilnweb" }) {
   return (
-    <div>
+    <div className="content">
       <Head>
         <title>{title}</title>
         <meta charSet="utf-8" />
