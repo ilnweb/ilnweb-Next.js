@@ -22,8 +22,8 @@ const Hero = () => {
               anim: { enable: false, speed: 1, opacity_min: 0.1, sync: false }
             },
             size: {
-              value: 30,
-              random: false,
+              value: 10,
+              random: true,
               anim: { enable: true, speed: 5, size_min: 30, sync: false }
             },
             line_linked: {
@@ -46,6 +46,12 @@ const Hero = () => {
           },
         }}
       />
+      <div className="hero_content">
+        <div className="hero_content-left">
+          <h1>Get the perfect website or web apllication now</h1>
+        </div>
+        <div className="hero_content-right"></div>
+      </div>
     </div>
   );
 };
