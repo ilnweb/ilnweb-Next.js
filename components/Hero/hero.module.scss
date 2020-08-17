@@ -16,13 +16,30 @@
   }
 
   &_content{
-    margin: 0 10%;
+    display: flex;
+    margin: 6rem 10% 0;
+    width: 100%;
+
     &-left{
       width: 50%;
+
+      &_subtitle{
+        margin-top:2rem;
+        margin-bottom: 3rem;
+        font-weight: 200;
+        padding-right: 8rem;
+      }
     }
 
     &-right{
+      display: flex;
+      align-items:center;
+      justify-content: center;
       width:50%;
+
+      img{
+        width: 80%;
+      }
     }
   }
 }

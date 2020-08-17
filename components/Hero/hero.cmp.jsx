@@ -48,9 +48,14 @@ const Hero = () => {
       />
       <div className="hero_content">
         <div className="hero_content-left">
-          <h1>Get the perfect website or web apllication now</h1>
+          <h1>Web developement professional freelance services</h1>
+          <p className="hero_content-left_subtitle">Show your bussines sucsees with a great and modern Progressive Web App, Single page Application or Web Site</p>
+          <button>Get a quote now!</button>
         </div>
-        <div className="hero_content-right"></div>
+        <div className="hero_content-right">
+          <img src="https://res.cloudinary.com/ilnphotography/image/upload/v1597671370/ilnweb%20new/hero_umal1n_1_zktabe.png" alt="" />
+        </div>
+       
       </div>
     </div>
   );

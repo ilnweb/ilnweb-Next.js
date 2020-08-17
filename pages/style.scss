@@ -9,12 +9,23 @@ body{
   width:100%;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  font-family: 'Heebo', sans-serif;
-  line-height: 1.2;
+  font-family: 'Exo 2', sans-serif;
+  font-size:1.1rem;
 }
 
 h1{
-  font-size: 3.2rem;
+  font-size: 3rem;
   margin: 0;
-  font-weight: 500;
+  font-weight: 700;
+}
+
+button{
+  background-color:#7CBD1E;
+  padding:1.2rem 3rem;
+  border-radius: 100px;
+  color:white;
+  border: none;
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: 'Exo 2', sans-serif;
 }
