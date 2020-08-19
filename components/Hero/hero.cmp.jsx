@@ -1,6 +1,6 @@
 import "./hero.module.scss";
 import Particles from "react-particles-js";
-import Herosvg from "../hero-svg";
+import Herosvg from "../Hero/hero-svg";
 
 const Hero = () => {
   return (
