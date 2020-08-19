@@ -1,3 +1,7 @@
+.hero-wrap{
+  position: relative;
+}
+
 .hero {
   position: relative;
   z-index: 9;
@@ -11,12 +15,75 @@
   align-items: center;
 
   svg {
-    width: 100%;
+    width: 90%;
   }
 
+  .svg-title {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+  }
 
-  .hand{
-    
+  .svg-plant-1{
+    animation: plantmove1 15s cubic-bezier(.36,.07,.19,.97) infinite;
+    transform-origin: center;
+  }
+
+  @keyframes plantmove1 {
+    0% {
+      transform: rotate(0deg);
+    }
+    10% {
+      transform: rotate(-1deg);
+    }
+    20% {
+      transform: rotate(1deg);
+    }
+    30% {
+      transform: rotate(0deg);
+    }
+    40% {
+      transform: rotate(1deg);
+    }
+    50% {
+      transform: rotate(1deg);
+    }
+    60% {
+      transform: rotate(-1deg);
+    }
+    70% {
+      transform: rotate(1deg);
+    }
+    80% {
+      transform: rotate(1deg);
+    }
+    90% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(1deg);
+    }
+  }
+ 
+
+  .hand {
+    fill: red;
+    transform: translateY(0);
+    animation: handmove 1.5s ease-in-out infinite;
+  }
+
+  @keyframes handmove {
+    0% {
+      transform: translateY(0);
+    }
+
+    50% {
+      transform: translateY(-20px);
+    }
+
+    100% {
+      transform: translateY(0);
+    }
   }
 
   .particles {
@@ -33,11 +100,7 @@
 
     &-left {
       width: 50%;
-
-      &_subtitle {
-        margin-top: 2rem;
-        margin-bottom: 3rem;
-        font-weight: 200;
+      .subtitle {
         padding-right: 8rem;
       }
     }

@@ -6,7 +6,7 @@ import {MdKeyboardArrowDown} from "react-icons/md";
 const HomePage = () => {
   return (
     <div className="home-page">
-      <div className="scroll-down"><MdKeyboardArrowDown style={{marginTop:".3rem"}}/></div>
+      
       <Hero />
       <About />
     </div>
