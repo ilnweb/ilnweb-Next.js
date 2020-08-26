@@ -3,6 +3,7 @@ import { AiTwotoneStar } from "react-icons/ai";
 import { IoMdSquare } from "react-icons/io";
 import { CgShapeTriangle } from "react-icons/cg";
 import { FaDotCircle } from "react-icons/fa";
+import { BsPentagonFill } from "react-icons/bs";
 
 const About = () => {
   return (
@@ -17,6 +18,7 @@ const About = () => {
         <div className="portfolio_circle-1">
           <AiTwotoneStar className="circle-icon circle-icon-1" />
           <FaDotCircle className="circle-icon circle-icon-4" />
+          <BsPentagonFill className="circle-icon circle-icon-5" />
           <div className="portfolio_circle-2">
             <IoMdSquare className="circle-icon circle-icon-2" />
             <div className="portfolio_circle-3">
