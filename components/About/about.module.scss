@@ -7,18 +7,25 @@
   min-height: 10rem;
   padding: 14rem;
   margin-top: -6rem;
-  background-color: rgb(245, 245, 245);
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+  background-color: #2d1e3d;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 95%);
 
-  &-title {}
+  &-title {
+    color:white;
+    
+  }
 
-  &-content{
+  p{
+    color:white!important;
+  }
+
+  &-content {
     position: relative;
     margin: 4rem 10% 0;
     width: 30rem;
     height: 30rem;
     display: flex;
-    align-items:center;
+    align-items: center;
     justify-content: center;
   }
 
@@ -26,7 +33,7 @@
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     width: 25rem;
     height: 25rem;
     background: radial-gradient(circle, rgba(167, 43, 132, 0.959) 0%, rgba(245, 66, 194, 0.67) 70%, rgba(245, 245, 245, 0) 90%, rgba(245, 245, 245, 0) 100%);
@@ -39,16 +46,16 @@
 
   }
 
- 
+
 
   &_circle-1,
   &_circle-2,
-  &_circle-3{
+  &_circle-3 {
     position: relative;
-    border:1px solid rgba(255, 255, 255, 0.452);
+    border: 1px solid rgba(255, 255, 255, 0.452);
     border-radius: 100%;
     display: flex;
-    align-items:center;
+    align-items: center;
     justify-content: center;
     // position: absolute;
     // left: 50%;
@@ -56,50 +63,73 @@
     // transform: translate(-50%,-50%);
   }
 
-  &_circle-1{
+  &_circle-1 {
     width: 30rem;
     height: 30rem;
-    animation: rotate 60s ease infinite;
+    animation: rotate 40s linear infinite;
   }
 
-  &_circle-2{
+  &_circle-2 {
     width: 22rem;
     height: 22rem;
   }
 
-  &_circle-3{
+  &_circle-3 {
     width: 15rem;
     height: 15rem;
   }
 
-  .circle-icon{
+  .circle-icon {
     position: absolute;
-    color:rgb(245, 245, 245);
-  
+    color: rgb(245, 245, 245);
+
   }
 
-  .circle-icon-1{
+  .circle-icon-1 {
     left: 163px;
     top: 0;
   }
-  .circle-icon-2{
-    right:13px;
+
+  .circle-icon-2 {
+    right: 13px;
     bottom: 81px;
   }
-  .circle-icon-3{
+
+  .circle-icon-3 {
     font-size: 1.2rem;
-    left:-6px;
+    left: -6px;
     bottom: 81px;
-    
+
   }
 
 }
 
 
 @keyframes rotate {
-  from { 
-    transform: rotate(0deg); 
-} to { 
-    transform: rotate(360deg); 
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
 }
+
+.video-1 {
+  position: absolute;
+  animation: fade 1s ease forwards;
+  transform: translateY(15rem);
+  opacity: 0;
+}
+
+
+@keyframes fade {
+  from {
+    transform: translateY(15rem);
+  }
+
+  to {
+    transform: translateY(0rem);
+    opacity: .9;
+  }
 }

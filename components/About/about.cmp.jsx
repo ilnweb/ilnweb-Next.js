@@ -22,6 +22,13 @@ const About = () => {
             </div>
           </div>
         </div>
+        <video className="video-1" width="400" height="260" loop autoplay="autoplay">
+          <source
+            src="https://res.cloudinary.com/ilnphotography/video/upload/v1598456692/ilnweb/Qizify_nfe74z.mp4"
+            type="video/mp4"
+          />
+          Your browser does not support the video tag.
+        </video>
       </div>
     </div>
   );
