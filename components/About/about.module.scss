@@ -21,7 +21,7 @@
 
   &-content {
     position: relative;
-    margin: 4rem 10% 0;
+    margin: 1rem 10% 0;
     width: 30rem;
     height: 30rem;
     display: flex;
@@ -39,7 +39,7 @@
     background: radial-gradient(circle, rgba(167, 43, 132, 0.959) 0%, rgba(245, 66, 194, 0.67) 70%, rgba(245, 245, 245, 0) 90%, rgba(245, 245, 245, 0) 100%);
     border: none;
     border-radius: 100%;
-    box-shadow: 0 0 600px rgba(245, 66, 194, 0.911), 0 0 600px rgba(245, 66, 194, 0.911);
+    box-shadow: 0 0 700px rgba(245, 66, 194, 0.911), 0 0 700px rgba(245, 66, 194, 0.911);
     transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
     filter: blur(4px);
     z-index: -1;
@@ -117,7 +117,7 @@
 
 .video-1 {
   position: absolute;
-  animation: fade 1s ease forwards;
+  animation: fade 1s ease-out .5s forwards;
   transform: translateY(15rem);
   opacity: 0;
 }
