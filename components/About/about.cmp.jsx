@@ -6,6 +6,7 @@ import { FaDotCircle } from "react-icons/fa";
 import { BsPentagonFill } from "react-icons/bs";
 
 const About = () => {
+
   return (
     <div className="portfolio">
       <h1 className="portfolio-title">Check out some of my work </h1>
@@ -14,6 +15,7 @@ const About = () => {
         used, video preview and link to the actual project.
       </p>
       <div className="portfolio-content">
+        
         <div className="portfolio_backround"></div>
         <div className="portfolio_circle-1">
           <AiTwotoneStar className="circle-icon circle-icon-1" />
@@ -26,7 +28,7 @@ const About = () => {
             </div>
           </div>
         </div>
-        <video className="video-1" width="400" height="260" autoplay="autoplay">
+        <video className="video-1" width="400" height="260">
           <source
             src="https://res.cloudinary.com/ilnphotography/video/upload/v1598457283/ilnweb/Qizify_vaqgnv.mp4"
             type="video/mp4"
