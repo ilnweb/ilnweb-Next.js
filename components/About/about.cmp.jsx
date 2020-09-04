@@ -12,7 +12,7 @@ const About = () => {
   const [inView, setView] = useState(false);
 
   const handleWaypointEnter = () => {
-    setView(true);
+    setView(false);
   };
   const handleWaypointLeave = () => {
     setView(false);
@@ -40,7 +40,7 @@ const About = () => {
         </div>
         <Waypoint onEnter={handleWaypointEnter} onLeave={handleWaypointLeave} />
         <div className={`video-1 ${inView ? "video-animation" : ""}`}>
-        <ReactPlayer
+        {inView&&<ReactPlayer
           height="400px"
           muted={true}
           playing={inView}
@@ -48,7 +48,7 @@ const About = () => {
           
         >
           Your browser does not support the video tag.
-        </ReactPlayer>
+        </ReactPlayer>}
         </div>
         
       </div>

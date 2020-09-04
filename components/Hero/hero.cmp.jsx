@@ -1,13 +1,24 @@
+import { useState } from "react";
 import "./hero.module.scss";
 import Particles from "react-particles-js";
 import Herosvg from "../Hero/hero-svg";
+import { Waypoint } from "react-waypoint";
 import {MdKeyboardArrowDown} from "react-icons/md";
 
 const Hero = () => {
+  const [inView, setView] = useState(false);
+
+  const handleWaypointEnter = () => {
+    setView(true);
+  };
+  const handleWaypointLeave = () => {
+    setView(false);
+  };
   return (
     <div className="hero-wrap">
+    <Waypoint onEnter={handleWaypointEnter} onLeave={handleWaypointLeave} />
       <div className="hero">
-        <Particles
+        {inView&&<Particles
           className="particles"
           params={{
             particles: {
@@ -53,7 +64,7 @@ const Hero = () => {
               },
             },
           }}
-        />
+        />}
         <div className="hero_content">
           <div className="hero_content-left">
             <h1>Web developement professional freelance services</h1>
@@ -64,7 +75,7 @@ const Hero = () => {
             <button className="button-primary">Get a quote now!</button>
           </div>
           <div className="hero_content-right">
-            <Herosvg />
+            {inView&&<Herosvg />}
           </div>
         </div>
       </div>
