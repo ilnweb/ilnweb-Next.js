@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./about.module.scss";
 import { AiTwotoneStar } from "react-icons/ai";
 import { IoMdSquare } from "react-icons/io";
@@ -10,9 +10,10 @@ import ReactPlayer from "react-player";
 
 const About = () => {
   const [inView, setView] = useState(false);
+  const [videoOut, setVideoOut] = useState(false);
   const [videos, setVideos] = useState([
     "https://res.cloudinary.com/ilnphotography/video/upload/v1598539103/ilnweb/Together_-_Google_Chrome_2020-08-27_16-09-19_1_cjiujt.mp4",
-
+    "https://res.cloudinary.com/ilnphotography/video/upload/v1598457283/ilnweb/Qizify_vaqgnv.mp4",
   ]);
 
   const handleWaypointEnter = () => {
@@ -21,6 +22,15 @@ const About = () => {
   const handleWaypointLeave = () => {
     setView(false);
   };
+
+  useEffect(() => {
+    setInterval(() => {
+      setVideoOut(true);
+    }, 4000);
+
+    
+  }, [setVideoOut]);
+
   return (
     <div className="portfolio">
       <h1 className="portfolio-title">Check out some of my work </h1>
@@ -31,7 +41,7 @@ const About = () => {
       <Waypoint onEnter={handleWaypointEnter} onLeave={handleWaypointLeave} />
       {inView && (
         <div className="portfolio-content">
-          <div className="portfolio_backround"/>
+          <div className="portfolio_backround" />
           <div className="portfolio_circle-1">
             <AiTwotoneStar className="circle-icon circle-icon-1" />
             <FaDotCircle className="circle-icon circle-icon-4" />
@@ -44,12 +54,28 @@ const About = () => {
             </div>
           </div>
 
-          <div className={`video-1 ${inView ? "video-animation" : ""}`}>
+          <div
+            className={`video-1 ${inView ? "video-animation anim" : ""} ${
+              videoOut ? "video-fadeout" : ""
+            }`}
+          >
             <ReactPlayer
               height="400px"
               muted={true}
               playing={inView}
-              url={videos[0]}
+              url="https://res.cloudinary.com/ilnphotography/video/upload/v1598539103/ilnweb/Together_-_Google_Chrome_2020-08-27_16-09-19_1_cjiujt.mp4"
+            >
+              Your browser does not support the video tag.
+            </ReactPlayer>
+          </div>
+          <div className={`video-1 ${inView ? "video-animation2" : ""} ${
+            videoOut ? "video-fadeout" : ""
+          }`}>
+            <ReactPlayer
+              height="400px"
+              muted={true}
+              playing={inView}
+              url="https://res.cloudinary.com/ilnphotography/video/upload/v1598457283/ilnweb/Qizify_vaqgnv.mp4"
             >
               Your browser does not support the video tag.
             </ReactPlayer>
