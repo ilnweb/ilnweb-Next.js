@@ -10,6 +10,10 @@ import ReactPlayer from "react-player";
 
 const About = () => {
   const [inView, setView] = useState(false);
+  const [videos, setVideos] = useState([
+    "https://res.cloudinary.com/ilnphotography/video/upload/v1598539103/ilnweb/Together_-_Google_Chrome_2020-08-27_16-09-19_1_cjiujt.mp4",
+
+  ]);
 
   const handleWaypointEnter = () => {
     setView(true);
@@ -45,7 +49,7 @@ const About = () => {
               height="400px"
               muted={true}
               playing={inView}
-              url="https://res.cloudinary.com/ilnphotography/video/upload/v1598539103/ilnweb/Together_-_Google_Chrome_2020-08-27_16-09-19_1_cjiujt.mp4"
+              url={videos[0]}
             >
               Your browser does not support the video tag.
             </ReactPlayer>
