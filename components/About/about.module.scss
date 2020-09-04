@@ -130,9 +130,13 @@
 
 .video-1 {
   position: absolute;
-  animation: fade 1s ease-out .5s forwards;
+  
   transform: translateY(15rem);
   opacity: 0;
+}
+
+.video-animation{
+  animation: fade .7s ease-out .5s forwards;
 }
 
 

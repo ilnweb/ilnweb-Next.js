@@ -6,6 +6,7 @@ import { CgShapeTriangle } from "react-icons/cg";
 import { FaDotCircle } from "react-icons/fa";
 import { BsPentagonFill } from "react-icons/bs";
 import { Waypoint } from "react-waypoint";
+import ReactPlayer from 'react-player'
 
 const About = () => {
   const [inView, setView] = useState(false);
@@ -38,20 +39,18 @@ const About = () => {
           </div>
         </div>
         <Waypoint onEnter={handleWaypointEnter} onLeave={handleWaypointLeave} />
-        <video
-          className={`${inView ? "video-1" : ""}`}
-          width="400"
-          height="260"
-          muted
-          autoPlay={inView}
+        <div className={`video-1 ${inView ? "video-animation" : ""}`}>
+        <ReactPlayer
+          height="400px"
+          muted={true}
+          playing={inView}
+          url="https://res.cloudinary.com/ilnphotography/video/upload/v1598539103/ilnweb/Together_-_Google_Chrome_2020-08-27_16-09-19_1_cjiujt.mp4"
           
         >
-          <source
-            src="https://res.cloudinary.com/ilnphotography/video/upload/v1598457283/ilnweb/Qizify_vaqgnv.mp4"
-            type="video/mp4"
-          />
           Your browser does not support the video tag.
-        </video>
+        </ReactPlayer>
+        </div>
+        
       </div>
     </div>
   );
