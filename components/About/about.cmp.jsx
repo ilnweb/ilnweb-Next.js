@@ -10,6 +10,7 @@ import ReactPlayer from "react-player";
 
 const About = () => {
   const [inView, setView] = useState(false);
+  const [current, setCurrent] = useState(0);
   const [videos, setVideos] = useState([
     {
       url:
@@ -39,15 +40,24 @@ const About = () => {
   };
 
   useEffect(() => {
-   
-    videos[0].fade = true;
-
-    const interval = setInterval(() => {
-      // console.log(videos)
+    videos[0].play = true;
+    setTimeout(() => {
+      if (current < videos.length) {
+        let newVideos = [...videos];
+        newVideos[current].fade = true;
+        setVideos(newVideos);
+        setCurrent(current + 1);
+        console.log(current)
+        let newVideos2 = [...videos];
+        newVideos2[current].play = true;
+        setVideos(newVideos2);
+      } else {
+        setCurrent(0);
+      }
     }, 4000);
 
-    return () => clearInterval(interval);
-  }, [videos, setVideos]);
+    return () => clearInterval();
+  },[current,videos]);
 
   return (
     <div className="portfolio">
