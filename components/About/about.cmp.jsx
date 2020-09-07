@@ -11,8 +11,18 @@ import ReactPlayer from "react-player";
 const About = () => {
   const [inView, setView] = useState(false);
   const [videos, setVideos] = useState([
-    "https://res.cloudinary.com/ilnphotography/video/upload/v1598539103/ilnweb/Together_-_Google_Chrome_2020-08-27_16-09-19_1_cjiujt.mp4",
-    "https://res.cloudinary.com/ilnphotography/video/upload/v1598457283/ilnweb/Qizify_vaqgnv.mp4",
+    {
+      url:
+        "https://res.cloudinary.com/ilnphotography/video/upload/v1598539103/ilnweb/Together_-_Google_Chrome_2020-08-27_16-09-19_1_cjiujt.mp4",
+      play: false,
+      fade: false,
+    },
+    {
+      url:
+        "https://res.cloudinary.com/ilnphotography/video/upload/v1598457283/ilnweb/Qizify_vaqgnv.mp4",
+      play: false,
+      fade: false,
+    },
   ]);
 
   const handleWaypointEnter = () => {
@@ -22,7 +32,14 @@ const About = () => {
     setView(false);
   };
 
-  
+  useEffect(() => {
+    let index = 0;
+    videos[0].play = true;
+    const interval = setInterval(() => {
+      setVideos([...videos,videos[0].fade = true]);
+    }, 4000);
+    return () => clearInterval(interval);
+  }, [videos, setVideos]);
 
   return (
     <div className="portfolio">
@@ -46,29 +63,18 @@ const About = () => {
               </div>
             </div>
           </div>
-
-          <div
-            className={`video-1 ${inView ? "video-animation" : ""}`}
-          >
-            <ReactPlayer
-              height="400px"
-              muted={true}
-              playing={inView}
-              url="https://res.cloudinary.com/ilnphotography/video/upload/v1598539103/ilnweb/Together_-_Google_Chrome_2020-08-27_16-09-19_1_cjiujt.mp4"
-            >
-              Your browser does not support the video tag.
-            </ReactPlayer>
-          </div>
-          <div className={`video-1 ${inView ? "video-animation2" : ""}`}>
-            <ReactPlayer
-              height="400px"
-              muted={true}
-              playing={inView}
-              url="https://res.cloudinary.com/ilnphotography/video/upload/v1598457283/ilnweb/Qizify_vaqgnv.mp4"
-            >
-              Your browser does not support the video tag.
-            </ReactPlayer>
-          </div>
+          {videos.map((video) => (
+            <div className={`video-1 ${video.play ? "video-animation" : ""}`}>
+              <ReactPlayer
+                height="400px"
+                muted={true}
+                playing={video.play}
+                url={video.url}
+              >
+                Your browser does not support the video tag.
+              </ReactPlayer>
+            </div>
+          ))}
         </div>
       )}
     </div>
