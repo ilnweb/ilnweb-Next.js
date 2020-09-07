@@ -23,6 +23,12 @@ const About = () => {
       play: false,
       fade: false,
     },
+    {
+      url:
+        "https://res.cloudinary.com/ilnphotography/video/upload/v1598457283/ilnweb/Qizify_vaqgnv.mp4",
+      play: false,
+      fade: false,
+    },
   ]);
 
   const handleWaypointEnter = () => {
@@ -33,11 +39,13 @@ const About = () => {
   };
 
   useEffect(() => {
-    let index = 0;
-    videos[0].play = true;
+   
+    videos[0].fade = true;
+
     const interval = setInterval(() => {
-      setVideos([...videos,videos[0].fade = true]);
+      // console.log(videos)
     }, 4000);
+
     return () => clearInterval(interval);
   }, [videos, setVideos]);
 
@@ -63,8 +71,13 @@ const About = () => {
               </div>
             </div>
           </div>
-          {videos.map((video) => (
-            <div className={`video-1 ${video.play ? "video-animation" : ""}`}>
+          {videos.map((video, i) => (
+            <div
+              key={i}
+              className={`video-1 ${video.play ? "video-animation" : ""} ${
+                video.fade ? "video-fadeout" : ""
+              }`}
+            >
               <ReactPlayer
                 height="400px"
                 muted={true}
