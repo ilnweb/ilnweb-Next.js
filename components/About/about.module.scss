@@ -130,13 +130,17 @@
 
 .video-1 {
   position: absolute;
-  transform: translateY(15rem);
   opacity: 0;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+  
+  
 }
 
 .video-animation{
-  animation: fade .7s ease-out .5s forwards;
   
+  animation: fade .7s ease-out .5s forwards;
 }
 
 .video-fadeout{
@@ -158,11 +162,12 @@
 
 @keyframes fade {
   from {
+    opacity:0;
     transform: translateY(15rem);
   }
 
   to {
-    transform: translateY(0rem);
+    transform: translate(-50%,-50%);
     opacity: .9;
   }
 }

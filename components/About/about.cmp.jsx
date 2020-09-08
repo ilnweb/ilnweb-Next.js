@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, createRef } from "react";
 import "./about.module.scss";
 import { AiTwotoneStar } from "react-icons/ai";
 import { IoMdSquare } from "react-icons/io";
@@ -11,11 +11,12 @@ import ReactPlayer from "react-player";
 const About = () => {
   const [inView, setView] = useState(false);
   const [current, setCurrent] = useState(0);
+  const videoLoop = createRef();
   const [videos, setVideos] = useState([
     {
       url:
         "https://res.cloudinary.com/ilnphotography/video/upload/v1598539103/ilnweb/Together_-_Google_Chrome_2020-08-27_16-09-19_1_cjiujt.mp4",
-      play: false,
+      play: true,
       fade: false,
     },
     {
@@ -32,32 +33,40 @@ const About = () => {
     },
   ]);
 
-  const handleWaypointEnter = () => {
-    setView(true);
-  };
-  const handleWaypointLeave = () => {
-    setView(false);
-  };
+  // const handleWaypointEnter = () => {
+  //   setView(true);
+  // };
+  // const handleWaypointLeave = () => {
+  //   setView(false);
+  // };
 
-  useEffect(() => {
-    videos[0].play = true;
-    setTimeout(() => {
-      if (current < videos.length) {
-        let newVideos = [...videos];
-        newVideos[current].fade = true;
-        setVideos(newVideos);
-        setCurrent(current + 1);
-        console.log(current)
-        let newVideos2 = [...videos];
-        newVideos2[current].play = true;
-        setVideos(newVideos2);
-      } else {
-        setCurrent(0);
-      }
-    }, 4000);
+  const startLoop = () => {
+    videoLoop.current.children[0].classList.add('video-animation')
+  }
 
-    return () => clearInterval();
-  },[current,videos]);
+  const stopLoop = () => {
+    videoLoop.current.children[0].classList.remove('video-animation')
+  }
+  console.log(videoLoop)
+  // useEffect(() => {
+  //   videos[0].play = true;
+  //   const interfal = setInterval(() => {
+  //     if (current < videos.length) {
+  //       let newVideos = [...videos];
+  //       newVideos[current].fade = true;
+  //       setVideos(newVideos);
+
+  //       console.log(current)
+  //       let newVideos2 = [...videos];
+  //       newVideos2[current].play = true;
+  //       setVideos(newVideos2);
+  //     } else {
+  //       setCurrent(0);
+  //     }
+  //   }, 4000);
+
+  //   return () => clearInterval(interfal);
+  // },[videos]);
 
   return (
     <div className="portfolio">
@@ -66,8 +75,9 @@ const About = () => {
         Here you can see some of my favorite project and explore techologies
         used, video preview and link to the actual project.
       </p>
-      <Waypoint onEnter={handleWaypointEnter} onLeave={handleWaypointLeave} />
-      {inView && (
+      
+      <Waypoint onEnter={startLoop} onLeave={stopLoop} />
+      
         <div className="portfolio-content">
           <div className="portfolio_backround" />
           <div className="portfolio_circle-1">
@@ -81,25 +91,25 @@ const About = () => {
               </div>
             </div>
           </div>
-          {videos.map((video, i) => (
-            <div
-              key={i}
-              className={`video-1 ${video.play ? "video-animation" : ""} ${
-                video.fade ? "video-fadeout" : ""
-              }`}
-            >
-              <ReactPlayer
-                height="400px"
-                muted={true}
-                playing={video.play}
-                url={video.url}
+          <div ref={videoLoop}>
+            {videos.map((video, i) => (
+              <div
+                key={i}
+                className="video-1"
               >
-                Your browser does not support the video tag.
-              </ReactPlayer>
-            </div>
-          ))}
+                <ReactPlayer
+                  height="400px"
+                  muted={true}
+                  playing={video.play}
+                  url={video.url}
+                >
+                  Your browser does not support the video tag.
+                </ReactPlayer>
+              </div>
+            ))}
+          </div>
         </div>
-      )}
+      
     </div>
   );
 };
