@@ -21,13 +21,13 @@ const About = () => {
     {
       url:
         "https://res.cloudinary.com/ilnphotography/video/upload/v1598457283/ilnweb/Qizify_vaqgnv.mp4",
-      height: "300px",
+      height: "280px",
       fade: false,
     },
     {
       url:
         "https://res.cloudinary.com/ilnphotography/video/upload/v1598457283/ilnweb/Qizify_vaqgnv.mp4",
-      height: "300px",
+      height: "280px",
       fade: false,
     },
   ]);
@@ -36,23 +36,51 @@ const About = () => {
     setView(true);
   };
   const handleWaypointLeave = () => {
-    const videosToLoop1 = Array.prototype.slice.call(
-      videoLoop.current.children
-    );
-    videosToLoop1.map((video) => {
-      video.classList.remove("video-animation");
-      video.classList.remove("video-fadeout");
-      // video.childNodes[0].childNodes[0].stop();
-    });
-    setView(false);
+    // const videosToLoop1 = Array.prototype.slice.call(
+    //   videoLoop.current.children
+    // );
+    // videosToLoop1.map((video) => {
+    //   video.classList.remove("video-animation");
+    //   video.classList.remove("video-fadeout");
+    //   // video.childNodes[0].childNodes[0].stop();
+    // });
+    // setView(false);
   };
 
-  const startLoop = (clear) => {
-    
+  // const startLoop = (clear) => {
+
+  //   const videosToLoop = Array.prototype.slice.call(videoLoop.current.children);
+  //   let current = 0;
+  //   videosToLoop[current].classList.add("video-animation");
+  //   videosToLoop[current].childNodes[0].childNodes[0].play();
+  //   const interval = setInterval(() => {
+  //     // console.log(current);
+  //     videosToLoop[current].classList.add("video-fadeout");
+  //     videosToLoop[current].classList.remove("video-animation");
+  //     // console.log(videosToLoop.length);
+
+  //     if (current === 2) {
+  //       current = 0;
+  //       videosToLoop[current].classList.add("video-animation");
+  //       videosToLoop[current].childNodes[0].childNodes[0].play();
+  //     } else {
+  //       current++;
+  //     }
+  //     videosToLoop[current].classList.add("video-animation");
+  //     videosToLoop[current].childNodes[0].childNodes[0].play();
+  //     videosToLoop[current].classList.remove("video-fadeout");
+  //   }, 4800);
+
+  // };
+
+  // console.log(videoLoop);
+
+  useEffect(() => {
     const videosToLoop = Array.prototype.slice.call(videoLoop.current.children);
     let current = 0;
     videosToLoop[current].classList.add("video-animation");
-    videosToLoop[current].childNodes[0].childNodes[0].play();
+    console.log(videosToLoop[current].childNodes[0].childNodes[0]);
+    videosToLoop[current].childNodes[0].childNodes[0] && videosToLoop[current].childNodes[0].childNodes[0].play();
     const interval = setInterval(() => {
       // console.log(current);
       videosToLoop[current].classList.add("video-fadeout");
@@ -62,39 +90,18 @@ const About = () => {
       if (current === 2) {
         current = 0;
         videosToLoop[current].classList.add("video-animation");
-        videosToLoop[current].childNodes[0].childNodes[0].play();
+        videosToLoop[current].childNodes[0].childNodes[0] &&
+          videosToLoop[current].childNodes[0].childNodes[0].play();
       } else {
         current++;
       }
       videosToLoop[current].classList.add("video-animation");
-      videosToLoop[current].childNodes[0].childNodes[0].play();
+      videosToLoop[current].childNodes[0].childNodes[0] && videosToLoop[current].childNodes[0].childNodes[0].play();
       videosToLoop[current].classList.remove("video-fadeout");
-    }, 5300);
-   
-    
-  };
+    }, 4800);
 
-  // console.log(videoLoop);
-
-  // useEffect(() => {
-  //   videos[0].play = true;
-  //   const interfal = setInterval(() => {
-  //     if (current < videos.length) {
-  //       let newVideos = [...videos];
-  //       newVideos[current].fade = true;
-  //       setVideos(newVideos);
-
-  //       console.log(current)
-  //       let newVideos2 = [...videos];
-  //       newVideos2[current].play = true;
-  //       setVideos(newVideos2);
-  //     } else {
-  //       setCurrent(0);
-  //     }
-  //   }, 4000);
-
-  //   return () => clearInterval(interfal);
-  // },[videos]);
+    return () => clearInterval(interval);
+  }, [videoLoop]);
 
   return (
     <div className="portfolio">
@@ -105,7 +112,6 @@ const About = () => {
       </p>
 
       <Waypoint onEnter={handleWaypointEnter} onLeave={handleWaypointLeave} />
-      <Waypoint onEnter={startLoop} onLeave={() => startLoop(true)} />
 
       <div className="portfolio-content">
         <div className="portfolio_backround" />
