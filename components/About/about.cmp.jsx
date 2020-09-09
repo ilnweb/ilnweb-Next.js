@@ -76,7 +76,7 @@ const About = () => {
   // console.log(videoLoop);
 
   useEffect(() => {
-    const videosToLoop = Array.prototype.slice.call(videoLoop.current.children);
+    if(inView){const videosToLoop = Array.prototype.slice.call(videoLoop.current.children);
     let current = 0;
     videosToLoop[current].classList.add("video-animation");
     console.log(videosToLoop[current].childNodes[0].childNodes[0]);
@@ -99,9 +99,9 @@ const About = () => {
       videosToLoop[current].childNodes[0].childNodes[0] && videosToLoop[current].childNodes[0].childNodes[0].play();
       videosToLoop[current].classList.remove("video-fadeout");
     }, 4800);
-
-    return () => clearInterval(interval);
-  }, [videoLoop]);
+      return () => clearInterval(interval);
+    }
+  }, [videoLoop,inView]);
 
   return (
     <div className="portfolio">
