@@ -41,13 +41,17 @@ const About = () => {
   // };
 
   const startLoop = () => {
-    videoLoop.current.children[0].classList.add('video-animation')
+    const videosToLoop = Array.prototype.slice.call(videoLoop.current.children);
+    videosToLoop.map(video => {
+      video.classList.add('video-animation');
+    })
   }
 
   const stopLoop = () => {
     videoLoop.current.children[0].classList.remove('video-animation')
   }
   console.log(videoLoop)
+  
   // useEffect(() => {
   //   videos[0].play = true;
   //   const interfal = setInterval(() => {
@@ -91,11 +95,11 @@ const About = () => {
               </div>
             </div>
           </div>
-          <div ref={videoLoop}>
+          <div className="portfolio-videos" ref={videoLoop}>
             {videos.map((video, i) => (
               <div
                 key={i}
-                className="video-1"
+                className="portfolio-video"
               >
                 <ReactPlayer
                   height="400px"
