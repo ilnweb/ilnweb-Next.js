@@ -10,13 +10,12 @@ import ReactPlayer from "react-player";
 
 const About = () => {
   const [inView, setView] = useState(false);
-  const [current, setCurrent] = useState(0);
   const videoLoop = createRef();
   const [videos, setVideos] = useState([
     {
       url:
         "https://res.cloudinary.com/ilnphotography/video/upload/v1598539103/ilnweb/Together_-_Google_Chrome_2020-08-27_16-09-19_1_cjiujt.mp4",
-      play: true,
+      play: false,
       fade: false,
     },
     {
@@ -42,16 +41,33 @@ const About = () => {
 
   const startLoop = () => {
     const videosToLoop = Array.prototype.slice.call(videoLoop.current.children);
-    videosToLoop.map(video => {
-      video.classList.add('video-animation');
-    })
-  }
+    let current = 0;
+    videosToLoop[current].classList.add("video-animation");
+    setInterval(() => {
+      console.log(current);
+      videosToLoop[current].classList.add("video-fadeout");
+      videosToLoop[current].classList.remove("video-animation");
+      console.log(videosToLoop.length);
+
+      if (current === 2) {
+        current = 0;
+        videosToLoop[current].classList.add("video-animation");
+      } else {
+        current++;
+      }
+      videosToLoop[current].classList.add("video-animation");
+      videosToLoop[current].classList.remove("video-fadeout");
+    }, 4000);
+  };
 
   const stopLoop = () => {
-    videoLoop.current.children[0].classList.remove('video-animation')
-  }
-  console.log(videoLoop)
-  
+    const videosToLoop = Array.prototype.slice.call(videoLoop.current.children);
+    videosToLoop.map((video) => {
+      video.classList.remove("video-animation");
+    });
+  };
+  console.log(videoLoop);
+
   // useEffect(() => {
   //   videos[0].play = true;
   //   const interfal = setInterval(() => {
@@ -79,41 +95,37 @@ const About = () => {
         Here you can see some of my favorite project and explore techologies
         used, video preview and link to the actual project.
       </p>
-      
+
       <Waypoint onEnter={startLoop} onLeave={stopLoop} />
-      
-        <div className="portfolio-content">
-          <div className="portfolio_backround" />
-          <div className="portfolio_circle-1">
-            <AiTwotoneStar className="circle-icon circle-icon-1" />
-            <FaDotCircle className="circle-icon circle-icon-4" />
-            <BsPentagonFill className="circle-icon circle-icon-5" />
-            <div className="portfolio_circle-2">
-              <IoMdSquare className="circle-icon circle-icon-2" />
-              <div className="portfolio_circle-3">
-                <CgShapeTriangle className="circle-icon circle-icon-3" />
-              </div>
+
+      <div className="portfolio-content">
+        <div className="portfolio_backround" />
+        <div className="portfolio_circle-1">
+          <AiTwotoneStar className="circle-icon circle-icon-1" />
+          <FaDotCircle className="circle-icon circle-icon-4" />
+          <BsPentagonFill className="circle-icon circle-icon-5" />
+          <div className="portfolio_circle-2">
+            <IoMdSquare className="circle-icon circle-icon-2" />
+            <div className="portfolio_circle-3">
+              <CgShapeTriangle className="circle-icon circle-icon-3" />
             </div>
           </div>
-          <div className="portfolio-videos" ref={videoLoop}>
-            {videos.map((video, i) => (
-              <div
-                key={i}
-                className="portfolio-video"
-              >
-                <ReactPlayer
-                  height="400px"
-                  muted={true}
-                  playing={video.play}
-                  url={video.url}
-                >
-                  Your browser does not support the video tag.
-                </ReactPlayer>
-              </div>
-            ))}
-          </div>
         </div>
-      
+        <div className="portfolio-videos" ref={videoLoop}>
+          {videos.map((video, i) => (
+            <div key={i} className="portfolio-video">
+              <ReactPlayer
+                height="400px"
+                muted={true}
+                playing={video.play}
+                url={video.url}
+              >
+                Your browser does not support the video tag.
+              </ReactPlayer>
+            </div>
+          ))}
+        </div>
+      </div>
     </div>
   );
 };
