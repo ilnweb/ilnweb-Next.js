@@ -123,13 +123,14 @@
     left: 50%;
     display: flex;
     justify-content: center;
-    align-items:center;
-    transform: translate(-50%,-50%);
+    align-items: center;
+    transform: translate(-50%, -50%);
   }
 
   &-video {
-  opacity: 0;
-   position: absolute;
+    opacity: 0;
+    position: absolute;
+  
   }
 
 }
@@ -148,7 +149,7 @@
 
 
 .video-animation {
-  animation: fade 1s ease-out .7s forwards;
+  animation: fade .5s ease-in-out .5s forwards;
 }
 
 .video-fadeout {
@@ -170,6 +171,7 @@
 
 @keyframes fade {
   from {
+    transform: scale(0.5);
     opacity: 0;
   }
 

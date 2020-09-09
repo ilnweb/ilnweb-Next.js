@@ -15,13 +15,13 @@ const About = () => {
     {
       url:
         "https://res.cloudinary.com/ilnphotography/video/upload/v1598539103/ilnweb/Together_-_Google_Chrome_2020-08-27_16-09-19_1_cjiujt.mp4",
-      play: false,
+      height: "400px",
       fade: false,
     },
     {
       url:
         "https://res.cloudinary.com/ilnphotography/video/upload/v1598457283/ilnweb/Qizify_vaqgnv.mp4",
-      play: false,
+      height: "300px",
       fade: false,
     },
     {
@@ -67,6 +67,7 @@ const About = () => {
     const videosToLoop = Array.prototype.slice.call(videoLoop.current.children);
     videosToLoop.map((video) => {
       video.classList.remove("video-animation");
+      video.classList.remove("video-fadeout");
     });
   };
   console.log(videoLoop);
@@ -118,7 +119,7 @@ const About = () => {
           {videos.map((video, i) => (
             <div key={i} className="portfolio-video">
               <ReactPlayer
-                height="400px"
+                height={video.height}
                 muted={true}
                 playing={false}
                 url={video.url}
