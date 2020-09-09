@@ -27,24 +27,33 @@ const About = () => {
     {
       url:
         "https://res.cloudinary.com/ilnphotography/video/upload/v1598457283/ilnweb/Qizify_vaqgnv.mp4",
-      play: false,
+      height: "300px",
       fade: false,
     },
   ]);
 
-  // const handleWaypointEnter = () => {
-  //   setView(true);
-  // };
-  // const handleWaypointLeave = () => {
-  //   setView(false);
-  // };
+  const handleWaypointEnter = () => {
+    setView(true);
+  };
+  const handleWaypointLeave = () => {
+    const videosToLoop1 = Array.prototype.slice.call(
+      videoLoop.current.children
+    );
+    videosToLoop1.map((video) => {
+      video.classList.remove("video-animation");
+      video.classList.remove("video-fadeout");
+      // video.childNodes[0].childNodes[0].stop();
+    });
+    setView(false);
+  };
 
-  const startLoop = () => {
+  const startLoop = (clear) => {
+    
     const videosToLoop = Array.prototype.slice.call(videoLoop.current.children);
     let current = 0;
     videosToLoop[current].classList.add("video-animation");
     videosToLoop[current].childNodes[0].childNodes[0].play();
-    setInterval(() => {
+    const interval = setInterval(() => {
       // console.log(current);
       videosToLoop[current].classList.add("video-fadeout");
       videosToLoop[current].classList.remove("video-animation");
@@ -60,17 +69,12 @@ const About = () => {
       videosToLoop[current].classList.add("video-animation");
       videosToLoop[current].childNodes[0].childNodes[0].play();
       videosToLoop[current].classList.remove("video-fadeout");
-    }, 5000);
+    }, 5300);
+   
+    
   };
 
-  const stopLoop = () => {
-    const videosToLoop = Array.prototype.slice.call(videoLoop.current.children);
-    videosToLoop.map((video) => {
-      video.classList.remove("video-animation");
-      video.classList.remove("video-fadeout");
-    });
-  };
-  console.log(videoLoop);
+  // console.log(videoLoop);
 
   // useEffect(() => {
   //   videos[0].play = true;
@@ -100,7 +104,8 @@ const About = () => {
         used, video preview and link to the actual project.
       </p>
 
-      <Waypoint onEnter={startLoop} onLeave={stopLoop} />
+      <Waypoint onEnter={handleWaypointEnter} onLeave={handleWaypointLeave} />
+      <Waypoint onEnter={startLoop} onLeave={() => startLoop(true)} />
 
       <div className="portfolio-content">
         <div className="portfolio_backround" />
@@ -119,7 +124,9 @@ const About = () => {
           {videos.map((video, i) => (
             <div key={i} className="portfolio-video">
               <ReactPlayer
+                style={{ borderRadius: "5px", overflow: "hidden" }}
                 height={video.height}
+                width={"auto"}
                 muted={true}
                 playing={false}
                 url={video.url}
