@@ -43,21 +43,24 @@ const About = () => {
     const videosToLoop = Array.prototype.slice.call(videoLoop.current.children);
     let current = 0;
     videosToLoop[current].classList.add("video-animation");
+    videosToLoop[current].childNodes[0].childNodes[0].play();
     setInterval(() => {
-      console.log(current);
+      // console.log(current);
       videosToLoop[current].classList.add("video-fadeout");
       videosToLoop[current].classList.remove("video-animation");
-      console.log(videosToLoop.length);
+      // console.log(videosToLoop.length);
 
       if (current === 2) {
         current = 0;
         videosToLoop[current].classList.add("video-animation");
+        videosToLoop[current].childNodes[0].childNodes[0].play();
       } else {
         current++;
       }
       videosToLoop[current].classList.add("video-animation");
+      videosToLoop[current].childNodes[0].childNodes[0].play();
       videosToLoop[current].classList.remove("video-fadeout");
-    }, 4000);
+    }, 5000);
   };
 
   const stopLoop = () => {
@@ -117,7 +120,7 @@ const About = () => {
               <ReactPlayer
                 height="400px"
                 muted={true}
-                playing={video.play}
+                playing={false}
                 url={video.url}
               >
                 Your browser does not support the video tag.

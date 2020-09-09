@@ -148,7 +148,7 @@
 
 
 .video-animation {
-  animation: fade .7s ease-out .5s forwards;
+  animation: fade 1s ease-out .7s forwards;
 }
 
 .video-fadeout {
@@ -171,11 +171,9 @@
 @keyframes fade {
   from {
     opacity: 0;
-    transform: translateY(15rem);
   }
 
   to {
-    transform: translate(0);
     opacity: .9;
   }
 }
