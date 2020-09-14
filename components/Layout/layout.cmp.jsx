@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Head from "next/head";
 import Header from "../Header/header.cmp";
+import './layout.module.scss'
 
 export default function Layout({ children, title = "ilnweb" }) {
   return (
@@ -13,7 +14,7 @@ export default function Layout({ children, title = "ilnweb" }) {
       </Head>
       <Header />
       {children}
-      <footer>{"I`m here to stay"}</footer>
+      <footer className="footer">{"I`m here to stay"}</footer>
     </div>
   );
 }
