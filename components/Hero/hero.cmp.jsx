@@ -16,7 +16,7 @@ const Hero = () => {
   };
   return (
     <div className="hero-wrap">
-    <Waypoint onEnter={handleWaypointEnter} onLeave={handleWaypointLeave} />
+    
       <div className="hero">
         {inView&&<Particles
           className="particles"
@@ -79,6 +79,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
+      <Waypoint onEnter={handleWaypointEnter} onLeave={handleWaypointLeave} />
       <div className="scroll-down"><MdKeyboardArrowDown style={{marginTop:".3rem"}}/></div>
     </div>
   );
