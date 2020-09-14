@@ -6,6 +6,7 @@ import { CgShapeTriangle } from "react-icons/cg";
 import { FaDotCircle } from "react-icons/fa";
 import { BsPentagonFill } from "react-icons/bs";
 import { Waypoint } from "react-waypoint";
+import Link from "next/link";
 import ReactPlayer from "react-player";
 
 const About = () => {
@@ -20,7 +21,7 @@ const About = () => {
     },
     {
       url:
-      "https://res.cloudinary.com/ilnphotography/video/upload/v1600094361/ilnweb/React_App_-_Google_Chrome_2020-09-14_16-24-37_1_ecbta2.mp4",
+        "https://res.cloudinary.com/ilnphotography/video/upload/v1600094361/ilnweb/React_App_-_Google_Chrome_2020-09-14_16-24-37_1_ecbta2.mp4",
       height: "280px",
       fade: false,
     },
@@ -35,45 +36,39 @@ const About = () => {
   const handleWaypointEnter = () => {
     setView(true);
   };
-  const handleWaypointLeave = () => {
-    // const videosToLoop1 = Array.prototype.slice.call(
-    //   videoLoop.current.children
-    // );
-    // videosToLoop1.map((video) => {
-    //   video.classList.remove("video-animation");
-    //   video.classList.remove("video-fadeout");
-    //   // video.childNodes[0].childNodes[0].stop();
-    // });
-    // setView(false);
-  };
 
   useEffect(() => {
-    if(inView){const videosToLoop = Array.prototype.slice.call(videoLoop.current.children);
-    let current = 0;
-    videosToLoop[current].classList.add("video-animation");
-    console.log(videosToLoop[current].childNodes[0].childNodes[0]);
-    videosToLoop[current].childNodes[0].childNodes[0] && videosToLoop[current].childNodes[0].childNodes[0].play();
-    const interval = setInterval(() => {
-      // console.log(current);
-      videosToLoop[current].classList.add("video-fadeout");
-      videosToLoop[current].classList.remove("video-animation");
-      // console.log(videosToLoop.length);
+    if (inView) {
+      const videosToLoop = Array.prototype.slice.call(
+        videoLoop.current.children
+      );
+      let current = 0;
+      videosToLoop[current].classList.add("video-animation");
+      console.log(videosToLoop[current].childNodes[0].childNodes[0]);
+      videosToLoop[current].childNodes[0].childNodes[0] &&
+        videosToLoop[current].childNodes[0].childNodes[0].play();
+      const interval = setInterval(() => {
+        // console.log(current);
+        videosToLoop[current].classList.add("video-fadeout");
+        videosToLoop[current].classList.remove("video-animation");
+        // console.log(videosToLoop.length);
 
-      if (current === 2) {
-        current = 0;
+        if (current === 2) {
+          current = 0;
+          videosToLoop[current].classList.add("video-animation");
+          videosToLoop[current].childNodes[0].childNodes[0] &&
+            videosToLoop[current].childNodes[0].childNodes[0].play();
+        } else {
+          current++;
+        }
         videosToLoop[current].classList.add("video-animation");
         videosToLoop[current].childNodes[0].childNodes[0] &&
           videosToLoop[current].childNodes[0].childNodes[0].play();
-      } else {
-        current++;
-      }
-      videosToLoop[current].classList.add("video-animation");
-      videosToLoop[current].childNodes[0].childNodes[0] && videosToLoop[current].childNodes[0].childNodes[0].play();
-      videosToLoop[current].classList.remove("video-fadeout");
-    }, 4800);
+        videosToLoop[current].classList.remove("video-fadeout");
+      }, 4800);
       return () => clearInterval(interval);
     }
-  }, [videoLoop,inView]);
+  }, [videoLoop, inView]);
 
   return (
     <div className="portfolio">
@@ -82,9 +77,7 @@ const About = () => {
         Here you can see some of my favorite project and explore techologies
         used, video preview and link to the actual project.
       </p>
-
-      <Waypoint onEnter={handleWaypointEnter} onLeave={handleWaypointLeave} />
-
+      <Waypoint onEnter={handleWaypointEnter} />
       <div className="portfolio-content">
         <div className="portfolio_backround" />
         <div className="portfolio_circle-1">
@@ -115,6 +108,11 @@ const About = () => {
           ))}
         </div>
       </div>
+      <Link href="/portfolio">
+        <button className="button-primary" style={{ marginTop: "6rem" }}>
+          View Portfolio
+        </button>
+      </Link>
     </div>
   );
 };
