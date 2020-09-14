@@ -1,8 +1,10 @@
-import './about.module.scss'
+import "./about.module.scss";
 
 const About = () => {
   return (
+    <div className="about">
       <h1>About</h1>
+    </div>
   );
 };
 

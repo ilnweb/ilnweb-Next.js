@@ -22,7 +22,7 @@ const Hero = () => {
           className="particles"
           params={{
             particles: {
-              number: { value: 7, density: { enable: true, value_area: 700 } },
+              number: { value: 4, density: { enable: true, value_area: 700 } },
               color: { value: "#e6e6e6" },
               shape: {
                 type: "polygon",

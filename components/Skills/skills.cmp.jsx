@@ -1,8 +1,10 @@
-import './skills.module.scss'
+import "./skills.module.scss";
 
 const Skills = () => {
   return (
+    <div className="skills">
       <h1>Skills</h1>
+    </div>
   );
 };
 
