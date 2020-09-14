@@ -20,7 +20,7 @@ const About = () => {
     },
     {
       url:
-        "https://res.cloudinary.com/ilnphotography/video/upload/v1598457283/ilnweb/Qizify_vaqgnv.mp4",
+      "https://res.cloudinary.com/ilnphotography/video/upload/v1600094361/ilnweb/React_App_-_Google_Chrome_2020-09-14_16-24-37_1_ecbta2.mp4",
       height: "280px",
       fade: false,
     },
@@ -46,34 +46,6 @@ const About = () => {
     // });
     // setView(false);
   };
-
-  // const startLoop = (clear) => {
-
-  //   const videosToLoop = Array.prototype.slice.call(videoLoop.current.children);
-  //   let current = 0;
-  //   videosToLoop[current].classList.add("video-animation");
-  //   videosToLoop[current].childNodes[0].childNodes[0].play();
-  //   const interval = setInterval(() => {
-  //     // console.log(current);
-  //     videosToLoop[current].classList.add("video-fadeout");
-  //     videosToLoop[current].classList.remove("video-animation");
-  //     // console.log(videosToLoop.length);
-
-  //     if (current === 2) {
-  //       current = 0;
-  //       videosToLoop[current].classList.add("video-animation");
-  //       videosToLoop[current].childNodes[0].childNodes[0].play();
-  //     } else {
-  //       current++;
-  //     }
-  //     videosToLoop[current].classList.add("video-animation");
-  //     videosToLoop[current].childNodes[0].childNodes[0].play();
-  //     videosToLoop[current].classList.remove("video-fadeout");
-  //   }, 4800);
-
-  // };
-
-  // console.log(videoLoop);
 
   useEffect(() => {
     if(inView){const videosToLoop = Array.prototype.slice.call(videoLoop.current.children);
@@ -130,7 +102,7 @@ const About = () => {
           {videos.map((video, i) => (
             <div key={i} className="portfolio-video">
               <ReactPlayer
-                style={{ borderRadius: "5px", overflow: "hidden" }}
+                style={{ borderRadius: "2px", overflow: "hidden" }}
                 height={video.height}
                 width={"auto"}
                 muted={true}
