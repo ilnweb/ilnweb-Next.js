@@ -1,10 +1,10 @@
-
+import Layout from '../components/Layout/layout.cmp';
 
 const Portfolio = () => {
   return (
-    <div className="home-page">
+    <Layout>
       <h1>Portfolio</h1>
-    </div>
+    </Layout>
   );
 };
 

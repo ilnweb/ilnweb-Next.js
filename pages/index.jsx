@@ -7,7 +7,6 @@ const Index =()=> {
   return (
     <Layout>
       <Homepage/>
-      <Portfolio/>
     </Layout>
   )
 }
