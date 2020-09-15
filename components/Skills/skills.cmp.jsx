@@ -1,96 +1,103 @@
 import { useState } from "react";
 import "./skills.module.scss";
+import {
+  FaNodeJs,
+  FaReact,
+  FaJs,
+  FaGitAlt,
+  FaHtml5,
+  FaCss3Alt,
+  FaSass,
+  FaWordpress,
+  FaPhp
+} from "react-icons/fa";
+import {
+  SiRedux,
+  SiTypescript,
+  SiMongodb,
+  SiFirebase,
+  SiMaterialUi,
+  SiBootstrap,
+  SiAdobephotoshop,
+} from "react-icons/si";
+import { AiOutlineAntDesign } from "react-icons/ai";
 
 const Skills = () => {
   const [skills, setSkills] = useState([
     {
-      url:
-        "https://res.cloudinary.com/ilnphotography/image/upload/v1600178103/ilnweb/techIcons/js_kluhnf.png",
+      url: FaJs,
       title: "JavaScript",
     },
     {
-      url:
-        "https://res.cloudinary.com/ilnphotography/image/upload/v1600178104/ilnweb/techIcons/react_b7o2ai.png",
+      url: FaReact,
       title: "React",
     },
     {
-      url:
-        "https://res.cloudinary.com/ilnphotography/image/upload/v1600178104/ilnweb/techIcons/redux-283024_x4ss7v.webp",
+      url: SiRedux,
       title: "Redux",
     },
     {
-      url:
-        "https://res.cloudinary.com/ilnphotography/image/upload/v1600178104/ilnweb/techIcons/typescript-1174965_hwqz0t.webp",
+      url: SiTypescript,
       title: "TypeScript",
     },
     {
-      url:
-        "https://res.cloudinary.com/ilnphotography/image/upload/v1600178104/ilnweb/techIcons/nodejs_lvrnqm.png",
+      url: FaNodeJs,
       title: "Node JS",
     },
+    
     {
-      url:
-        "https://res.cloudinary.com/ilnphotography/image/upload/v1600178103/ilnweb/techIcons/express-js-png-5_radzso.png",
-      title: "Express",
-    },
-    {
-      url:
-        "https://res.cloudinary.com/ilnphotography/image/upload/v1600178103/ilnweb/techIcons/MongoDB_logo_01_mqvryq.png",
+      url: SiMongodb,
       title: "MongoDB",
     },
     {
-      url:
-        "https://res.cloudinary.com/ilnphotography/image/upload/v1600178103/ilnweb/techIcons/firebase_urz2rv.png",
+      url: SiFirebase,
       title: "Firebase",
     },
     {
-      url:
-        "https://res.cloudinary.com/ilnphotography/image/upload/v1600178103/ilnweb/techIcons/git_ivatpe.png",
+      url: FaGitAlt,
       title: "Git",
     },
     {
-      url:
-        "https://res.cloudinary.com/ilnphotography/image/upload/v1600178103/ilnweb/techIcons/HTML_y9lg3d.png",
+      url: FaHtml5,
       title: "HTML",
     },
     {
-      url:
-        "https://res.cloudinary.com/ilnphotography/image/upload/v1600178103/ilnweb/techIcons/CSS_uxjzef.png",
+      url: FaCss3Alt,
       title: "CSS",
     },
     {
-      url:
-        "https://res.cloudinary.com/ilnphotography/image/upload/v1600178104/ilnweb/techIcons/sass_q1pdpi.png",
+      url: FaSass,
       title: "SASS",
     },
     {
-      url:
-        "https://res.cloudinary.com/ilnphotography/image/upload/v1600178436/ilnweb/techIcons/logo_glbyxj.png",
+      url: SiMaterialUi,
       title: "Material UI",
     },
     {
-      url:
-        "https://res.cloudinary.com/ilnphotography/image/upload/v1600178441/ilnweb/techIcons/KDpgvguMpGfqaHPjicRK_i1rowd.svg",
+      url: AiOutlineAntDesign,
       title: "Antd Design",
     },
     {
-      url:
-        "https://res.cloudinary.com/ilnphotography/image/upload/v1600178103/ilnweb/techIcons/bootstrap_quszip.jpg",
+      url: SiBootstrap,
       title: "Bootstrap",
     },
+    // {
+    //   url:<svg width="70" viewBox="0 0 128 128">
+    //   <path fill="aliceblue" d="M95 2.3l30.5 12.3v98.7L94.8 125.7 45.8 77l-31 24.1L2.5 94.9V33.1l12.3-5.9 31 24.3ZM14.8 45.7V83.2l18.5-19Zm48.1 18.5L94.8 89.3V39Z"></path>
+    // </svg>,
+    //   title: "VS Code",
+    // },
     {
       url:
-        "https://res.cloudinary.com/ilnphotography/image/upload/v1600178103/ilnweb/techIcons/vscode_jzijvz.png",
-      title: "VS Code",
+      FaPhp,
+      title: "PHP",
     },
     {
-      url:
-        "https://res.cloudinary.com/ilnphotography/image/upload/v1600178251/ilnweb/techIcons/WordPress_f18gxo.png",
+      url: FaWordpress,
       title: "WordPress",
     },
     {
-      url:
-        "https://res.cloudinary.com/ilnphotography/image/upload/v1600178104/ilnweb/techIcons/Photoshop_CC_icon_wysoyq.png",
+      url: SiAdobephotoshop,
       title: "Photoshop",
     },
   ]);
@@ -103,12 +110,24 @@ const Skills = () => {
         love
       </p>
       <div className="skills-icons">
-        {skills.map((skill,index) => (
-          <div key={index} className="skills-icon">
-            <img src={skill.url} alt={skill.title} />
-            <p>{skill.title}</p>
-          </div>
-        ))}
+        {skills.map((skill, index) => {
+          let TagName = skill.url;
+          return (
+            <div key={index} className="skills-icon">
+              <TagName className="icon-image" />
+              <p>{skill.title}</p>
+            </div>
+          );
+        })}
+        <div className="skills-icon">
+          <svg height="1em" width="1em" viewBox="0 0 128 128" className="icon-image">
+            <path
+              fill="aliceblue"
+              d="M95 2.3l30.5 12.3v98.7L94.8 125.7 45.8 77l-31 24.1L2.5 94.9V33.1l12.3-5.9 31 24.3ZM14.8 45.7V83.2l18.5-19Zm48.1 18.5L94.8 89.3V39Z"
+            ></path>
+          </svg>
+          <p>VS Code</p>
+        </div>
       </div>
     </div>
   );

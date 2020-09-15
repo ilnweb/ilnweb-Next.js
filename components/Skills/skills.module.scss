@@ -1,9 +1,33 @@
-.skills{
+.skills {
   min-height: 30rem;
-  background-color:lightcoral;
-  padding:14rem;
+  background-color: lightcoral;
+  padding: 14rem 5rem ;
   display: flex;
-  align-items:center;
+  align-items: center;
   flex-direction: column;
   margin-top: -8rem;
+
+  &-icons {
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+
+  &-icon {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+
+    .icon-image {
+      font-size: 3.5rem;
+      color:white;
+      
+    }
+    p{
+      color:white;
+    }
+  }
 }
