@@ -2,7 +2,7 @@ import { useState } from "react";
 import "./skills.module.scss";
 
 const Skills = () => {
-  const skills = useState([
+  const [skills, setSkills] = useState([
     {
       url:
         "https://res.cloudinary.com/ilnphotography/image/upload/v1600178103/ilnweb/techIcons/js_kluhnf.png",
@@ -77,7 +77,7 @@ const Skills = () => {
       url:
         "https://res.cloudinary.com/ilnphotography/image/upload/v1600178103/ilnweb/techIcons/bootstrap_quszip.jpg",
       title: "Bootstrap",
-    }
+    },
     {
       url:
         "https://res.cloudinary.com/ilnphotography/image/upload/v1600178103/ilnweb/techIcons/vscode_jzijvz.png",
@@ -94,6 +94,7 @@ const Skills = () => {
       title: "Photoshop",
     },
   ]);
+  console.log(skills);
   return (
     <div className="skills">
       <h1>Skills</h1>
@@ -102,8 +103,8 @@ const Skills = () => {
         love
       </p>
       <div className="skills-icons">
-        {skills.map(skill => (
-          <div className="skills-icon">
+        {skills.map((skill,index) => (
+          <div key={index} className="skills-icon">
             <img src={skill.url} alt={skill.title} />
             <p>{skill.title}</p>
           </div>
