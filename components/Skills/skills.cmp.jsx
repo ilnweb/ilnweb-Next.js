@@ -101,7 +101,14 @@ const Skills = () => {
         Here are some of my besht skills and technologies that im user and I
         love
       </p>
-    <div></div>
+      <div className="skills-icons">
+        {skills.map(skill => (
+          <div className="skills-icon">
+            <img src={skill.url} alt={skill.title} />
+            <p>{skill.title}</p>
+          </div>
+        ))}
+      </div>
     </div>
   );
 };
