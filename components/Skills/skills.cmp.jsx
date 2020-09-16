@@ -23,6 +23,7 @@ import {
 import { AiOutlineAntDesign } from "react-icons/ai";
 import { Waypoint } from "react-waypoint";
 
+
 const Skills = () => {
   const [skills, setSkills] = useState([
     {
@@ -99,12 +100,25 @@ const Skills = () => {
   const [inView, setView] = useState(false);
 
   const handleWaypointEnter = () => {
-    setView(false);
+    setView(true);
   };
 
   const handleWaypointLeave = () => {
     setView(false);
   };
+
+  // useEffect(() => {
+  //   const timeOut = setTimeout(() => {
+  //       return (
+  //         <div key={index} className="skills-icon">
+  //           <TagName className="icon-image" />
+  //           <p>{skill.title}</p>
+  //         </div>
+  //       );
+  //     }, 500);
+  //   }
+  // }, []);
+  
 
   return (
     <div className="skills">
@@ -116,14 +130,9 @@ const Skills = () => {
       <Waypoint onEnter={handleWaypointEnter} onLeave={handleWaypointLeave} />
       <div className="skills-icons">
         {inView &&
-          skills.map((skill, index) => {
+          skills.forEach((skill, index) => {
             let TagName = skill.url;
-            return (
-              <div key={index} className="skills-icon">
-                <TagName className="icon-image" />
-                <p>{skill.title}</p>
-              </div>
-            );
+            return timeOut(TagName,index,skill)
           })}
         {
           //  <div className="skills-icon">
