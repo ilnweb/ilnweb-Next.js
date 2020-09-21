@@ -34,17 +34,17 @@
   }
 
   .icon-animation{
-    animation: up .7s ease-out .5s forwards;
+    animation: up .7s cubic-bezier(0.45, 0.25, 0.60, 0.95) .5s forwards;
   }
 
   @keyframes up {
     from {
-      transform: translateY(2rem);
+      transform: translateY(3rem) scale(0);
       opacity: 0;
     }
 
     to {
-      transform: translateY(0rem);
+      transform: translateY(0rem) scale(1);
       opacity: .9;
     }
   }

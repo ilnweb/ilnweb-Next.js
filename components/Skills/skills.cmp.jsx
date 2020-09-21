@@ -105,9 +105,10 @@ const Skills = () => {
       skillsArray.current.children
     );
     
-    skiilsToLoop.map(skill => {
-      skill.classList.add("icon-animation");
-      console.log(skill);
+    skiilsToLoop.map((skill, index) => {
+      setTimeout(function () {
+        skill.classList.add("icon-animation");
+      }, 500*index/4);
     })
   };
 
@@ -117,8 +118,8 @@ const Skills = () => {
 
   return (
     <div className="skills">
-      <h1>Skills</h1>
-      <p>
+      <h1 className="color-white">Skills</h1>
+      <p className="color-white">
         Here are some of my besht skills and technologies that im user and I
         love
       </p>
