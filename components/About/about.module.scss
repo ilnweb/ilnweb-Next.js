@@ -11,7 +11,7 @@
   &-content{
     display: flex;
     margin-top: 6rem;
-    width:80%;
+    width:90%;
 
     &-left{
       width: 50%;
@@ -21,17 +21,42 @@
     &-right{
       position: relative;
       width: 50%;
-      clip-path: polygon(0 0, 100% 0, 100% 79%, 0% 100%);
-      background-color:yellowgreen;
+      display: flex;
+      align-items:center;
+      justify-content: center;
+      // background-color:yellowgreen;
+      overflow: hidden;
+    }
+  }
+.img{
+  opacity: 0;
+}
+  .image-show{
+    opacity: 0;
+    animation: pp .7s cubic-bezier(0.45, 0.25, 0.60, 0.95) forwards;
+  }
+
+  @keyframes pp {
+    from {
+      transform: translateY(4rem);
+      opacity: 0;
+    }
+
+    to {
+      transform: translateY(0rem);
+      opacity: .9;
     }
   }
 
   &-line{
     position: absolute;
-    bottom:3rem;
+    left:2rem;
+    bottom:-24rem;
     width: 100%;
-    height: 2px;
-    background-color:black;
+    height:30rem;
+    background-color:lightgray;
+    border-top: 1px solid black;
     transform: rotate(-13deg);
+    z-index: 10;
   }
 }

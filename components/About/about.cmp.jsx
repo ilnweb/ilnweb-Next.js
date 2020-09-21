@@ -1,9 +1,18 @@
+import { useState, useEffect, createRef } from "react";
 import "./about.module.scss";
+import { Waypoint } from "react-waypoint";
 
 const About = () => {
+  const [inView, setView] = useState(false);
+
+  const handleWaypointEnter = () => {
+    setView(true);
+  };
+
   return (
     <div className="about">
       <h1>About</h1>
+      <Waypoint onEnter={handleWaypointEnter} />
       <div className="about-content">
         <div className="about-content-left">
           <h1>Hi, my name is ILIYAN TSACHEV</h1>
@@ -13,7 +22,8 @@ const About = () => {
           
         </div>
         <div className="about-content-right">
-          <div className="about-line"/>
+          <div className="about-line" />
+          <img className={`img ${inView ? "image-show":''}`} style={{width:'90%'}} src="https://res.cloudinary.com/ilnphotography/image/upload/v1600702880/ilnweb/shadow_zsw6h2_royosx.png" alt=""/>
         </div>
       </div>
     </div>
