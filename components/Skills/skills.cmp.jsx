@@ -19,6 +19,7 @@ import {
   SiMaterialUi,
   SiBootstrap,
   SiAdobephotoshop,
+  SiLg,
 } from "react-icons/si";
 import { AiOutlineAntDesign } from "react-icons/ai";
 import { Waypoint } from "react-waypoint";
@@ -97,10 +98,17 @@ const Skills = () => {
   ]);
 
   const [inView, setView] = useState(false);
-  const skillsLoop = createRef();
+  const skillsArray = createRef();
 
   const handleWaypointEnter = () => {
-    setView(true);
+    const skiilsToLoop = Array.prototype.slice.call(
+      skillsArray.current.children
+    );
+    
+    skiilsToLoop.map(skill => {
+      skill.classList.add("icon-animation");
+      console.log(skill);
+    })
   };
 
   const handleWaypointLeave = () => {
@@ -115,18 +123,17 @@ const Skills = () => {
         love
       </p>
       <Waypoint onEnter={handleWaypointEnter} onLeave={handleWaypointLeave} />
-      <div className="skills-icons">
-        {inView &&
-          skills.map((skill, index) => {
-            let TagName = skill.url;
-            return (
-              <div ref={skillsLoop} key={index} className="skills-icon">
-                <TagName className="icon-image" />
-                <p>{skill.title}</p>
-              </div>
-            );
-          })}
-        <div ref={skillsLoop} className="skills-icon">
+      <div className="skills-icons" ref={skillsArray}>
+        {skills.map((skill, index) => {
+          let TagName = skill.url;
+          return (
+            <div key={index} className="skills-icon">
+              <TagName className="icon-image" />
+              <p>{skill.title}</p>
+            </div>
+          );
+        })}
+        <div className="skills-icon">
           <svg
             height="1em"
             width="1em"

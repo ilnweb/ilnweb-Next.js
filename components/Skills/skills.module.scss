@@ -19,29 +19,33 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
+    opacity: 0;
 
     .icon-image {
       font-size: 3.5rem;
       color: white;
-      animation: up .7s ease-out .5s forwards;
-      opacity: 1;
     }
 
-    @keyframes up {
-      from {
-        transform: translateY(2rem);
-        opacity: 0;
-      }
-
-      to {
-        transform: translateY(0rem);
-        opacity: .9;
-      }
-    }
+   
 
     p {
       color: white;
+    }
+  }
+
+  .icon-animation{
+    animation: up .7s ease-out .5s forwards;
+  }
+
+  @keyframes up {
+    from {
+      transform: translateY(2rem);
+      opacity: 0;
+    }
+
+    to {
+      transform: translateY(0rem);
+      opacity: .9;
     }
   }
 }
