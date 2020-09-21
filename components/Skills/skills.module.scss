@@ -1,7 +1,7 @@
 .skills {
   min-height: 30rem;
   background-color: lightcoral;
-  padding: 14rem 5rem ;
+  padding: 14rem 5rem;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -19,13 +19,13 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
+
 
     .icon-image {
       font-size: 3.5rem;
-      color:white;
+      color: white;
       animation: up .7s ease-out .5s forwards;
-      opacity: 0;
+      opacity: 1;
     }
 
     @keyframes up {
@@ -33,15 +33,15 @@
         transform: translateY(2rem);
         opacity: 0;
       }
-    
+
       to {
         transform: translateY(0rem);
         opacity: .9;
       }
     }
-    
-    p{
-      color:white;
+
+    p {
+      color: white;
     }
   }
 }
