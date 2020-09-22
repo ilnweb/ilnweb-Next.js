@@ -1,9 +1,14 @@
+@import 'style/variables.module.scss';
+
 html, body{
   margin:0;
   padding:0;
  
   
 }
+
+//variables 
+
 
 body{
   width:100%;
@@ -31,12 +36,17 @@ button{
   cursor: pointer;
 }
 
+p{
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
 .color-white{
   color:white;
 }
 
 .button-primary{
-  background-color:#7CBD1E;
+  background-color:$purple;
   color:white;
 }
 
