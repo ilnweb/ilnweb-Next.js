@@ -10,7 +10,7 @@ const HeroSvg = () => {
         <style
           dangerouslySetInnerHTML={{
             __html:
-              "\n      .cls-1 {\n        fill: #f0f0f0;\n      }\n\n      .cls-2 {\n        fill: #e0e0e0;\n      }\n\n      .cls-13,\n      .cls-3 {\n        fill: #7cbd1e;\n      }\n\n      .cls-4 {\n        opacity: 0.15;\n      }\n\n      .cls-10,\n      .cls-12,\n      .cls-13,\n      .cls-14,\n      .cls-18,\n      .cls-20,\n      .cls-4,\n      .cls-6 {\n        isolation: isolate;\n      }\n\n      .cls-10,\n      .cls-12,\n      .cls-18,\n      .cls-5 {\n        fill: #fff;\n      }\n\n      .cls-6 {\n        opacity: 0.3;\n      }\n\n      .cls-20,\n      .cls-7 {\n        fill: #455a64;\n      }\n\n      .cls-8 {\n        fill: #37474f;\n      }\n\n      .cls-9 {\n        fill: #263238;\n      }\n\n      .cls-10 {\n        opacity: 0.65;\n      }\n\n      .cls-11 {\n        fill: #fafafa;\n      }\n\n      .cls-12 {\n        opacity: 0.8;\n      }\n\n      .cls-13 {\n        opacity: 0.2;\n      }\n\n      .cls-14,\n      .cls-15 {\n        opacity: 0.1;\n      }\n\n      .cls-16 {\n        fill: #ffa8a7;\n      }\n\n      .cls-17 {\n        fill: #f28f8f;\n      }\n\n      .cls-18 {\n        opacity: 0.7;\n      }\n\n      .cls-19 {\n        fill: none;\n      }\n\n      .cls-20 {\n        font-size: 23.05px;\n        font-family: ArialRoundedMTBold, Arial Rounded MT Bold;\n      }\n\n      .cls-21 {\n        letter-spacing: -0.06em;\n      }\n\n      .cls-22 {\n        letter-spacing: -0.05em;\n      }\n    ",
+              "\n      .cls-1 {\n        fill: #f0f0f0;\n      }\n\n      .cls-2 {\n        fill: #e0e0e0;\n      }\n\n      .cls-13,\n \n\n      .cls-4 {\n        opacity: 0.8;\n      }\n\n      .cls-10,\n      .cls-12,\n      .cls-13,\n      .cls-14,\n      .cls-18,\n      .cls-20,\n      .cls-4,\n      .cls-6 {\n        isolation: isolate;\n      }\n\n      .cls-10,\n      .cls-12,\n      .cls-18,\n      .cls-5 {\n        fill: #fff;\n      }\n\n      .cls-6 {\n        \n      }\n\n      .cls-20,\n      .cls-7 {\n        fill: #455a64;\n      }\n\n      .cls-8 {\n        fill: #37474f;\n      }\n\n      .cls-9 {\n        fill: #263238;\n      }\n\n      .cls-10 {\n        opacity: 0.65;\n      }\n\n      .cls-11 {\n        fill: #fafafa;\n      }\n\n      .cls-12 {\n        opacity: 0.8;\n      }\n\n      .cls-13 {\n        opacity: 0.2;\n      }\n\n      .cls-14,\n      .cls-15 {\n        \n      }\n\n      .cls-16 {\n        fill: #ffa8a7;\n      }\n\n      .cls-17 {\n        fill: #f28f8f;\n      }\n\n      .cls-18 {\n        opacity: 0.7;\n      }\n\n      .cls-19 {\n        fill: none;\n      }\n\n      .cls-20 {\n        font-size: 23.05px;\n        font-family: ArialRoundedMTBold, Arial Rounded MT Bold;\n      }\n\n      .cls-21 {\n        letter-spacing: -0.06em;\n      }\n\n      .cls-22 {\n        letter-spacing: -0.05em;\n      }\n    ",
           }}
         />
       </defs>
@@ -54,7 +54,7 @@ const HeroSvg = () => {
             transform="translate(78.7 -15.03)"
           />
           <path
-            className="cls-4"
+            className="cls-4 green"
             d="M430.1,330.7c8.8-32.9,33.6-44,47.2-53.8s1.6-21.2-11.8-18.9-26.9,13.9-35.8,31.3-9.4,38.7-9.4,38.7Z"
             transform="translate(78.7 -15.03)"
           />
@@ -70,7 +70,7 @@ const HeroSvg = () => {
               transform="translate(78.7 -15.03)"
             />
             <path
-              className="cls-6"
+              className="cls-6 green"
               d="M418.5,346.9a78.71,78.71,0,0,1-.2-17.5c.8-7.9,3.5-13.7,7.9-16.5.2,2.7,3,8.3,5,10.1.2-2.6-.2-5.2-.2-7.8a11.18,11.18,0,0,1,2.3-7.3,11.3,11.3,0,0,1,4.3-2.9,52.47,52.47,0,0,1,11-3.6,2.77,2.77,0,0,1,1.8,0c1.1.5,1.1,2,1,3.2s.3,2.7,1.5,2.8a16.52,16.52,0,0,0,.5-3.8,4.69,4.69,0,0,1,1.7-3.4,5,5,0,0,1,2.7-.5,56.91,56.91,0,0,1,8.3.6c2.4.3,4.8.5,7.3.8a49.7,49.7,0,0,1,7.7,1.4c.5.1-.3,10.6-.4,11.4a9.55,9.55,0,0,1-3.5,5.9c-3.2,2.2-7.4,1.5-11.3,1.2a22.88,22.88,0,0,0-3.7.1c-.8.1-2.4,1.6-.2,2l10.1,2.9a3.48,3.48,0,0,1,2.2,1.2c.8,1.1.3,2.5-.2,3.7-1.5,3.5-3.1,7.2-6.1,9.6a16.4,16.4,0,0,1-10.9,3.3,59.78,59.78,0,0,1-12.5-2.3c3.2,3.8,12.1,5.2,12.8,6.1,1.5,1.6-1.2,2.9-2.9,3.5a49.35,49.35,0,0,1-19.1,2.5c-9.1-.8-11.9-2.7-16.9-5.6A2.05,2.05,0,0,0,418.5,346.9Z"
               transform="translate(78.7 -15.03)"
             />
@@ -92,7 +92,7 @@ const HeroSvg = () => {
           transform="translate(78.7 -15.03)"
         />
         <path
-          className="cls-4"
+          className="cls-4 green"
           d="M43.4,228.6c10.8-1.3,23.2,12.3,29.8,25.6,4.8,9.7,9.7,25.7,9.1,44.5a6.15,6.15,0,0,1-3.2,5.2h0l-1.3.7-.5.3-3.2,1.8-.5-7.7c-.5-4.3-2.6-8.9-5.4-13.7v-.1c-7.3-12.1-20-24.7-26.9-32.3C31.6,242.3,33.3,229.8,43.4,228.6Z"
           transform="translate(78.7 -15.03)"
         />
@@ -107,7 +107,7 @@ const HeroSvg = () => {
           transform="translate(78.7 -15.03)"
         />
         <path
-          className="cls-6"
+          className="cls-6 green"
           d="M48.2,267.6c5.5,1.6,13.4,8.4,19.8,17.7v.1A64.87,64.87,0,0,1,77.1,305l-3.2,1.8h-.1l-1.2.7h0a6.19,6.19,0,0,1-7.9-1.6,64.93,64.93,0,0,0-6.6-7.3C48.4,289.5,35.3,284,33,277.7,30.5,270.1,37.3,264.5,48.2,267.6Z"
           transform="translate(78.7 -15.03)"
         />
@@ -150,17 +150,19 @@ const HeroSvg = () => {
             transform="translate(78.7 -15.03)"
           />
           <path
+          
             className="cls-9"
             d="M423.3,163.2l-1.1,171.4c0,2.2-1.6,3.1-3.5,2L205.1,211.5a7.63,7.63,0,0,1-3.4-6l1-171.5c0-2.2,1.6-3.1,3.5-2L419.8,157.1A7.8,7.8,0,0,1,423.3,163.2Z"
             transform="translate(78.7 -15.03)"
           />
           <path
+          
             className="cls-3"
             d="M207.5,32.8l-1.1,170.4a7.63,7.63,0,0,0,3.4,6L422.2,333.6l1.1-170.4a7.63,7.63,0,0,0-3.4-6Z"
             transform="translate(78.7 -15.03)"
           />
           <path
-            className="cls-10"
+            className="cls-10 purple"
             d="M207.5,32.8l-1.1,170.4a7.63,7.63,0,0,0,3.4,6L422.2,333.6l1.1-170.4a7.63,7.63,0,0,0-3.4-6Z"
             transform="translate(78.7 -15.03)"
           />
@@ -198,12 +200,12 @@ const HeroSvg = () => {
               transform="translate(78.7 -15.03)"
             />
             <path
-              className="cls-4"
+              className="cls-4 grey"
               d="M43,29c.2-2.6,1.5-4.4,3.4-5.1S59.5,19,61.5,18.3s4.5-.4,7.2,1.2L263.6,129.4l-4.2,53.8-15,5.6L49.4,78.9c-5.5-3.1-9.6-9.9-9.2-15.2Z"
               transform="translate(78.7 -15.03)"
             />
             <path
-              className="cls-3"
+              className="cls-3 grey"
               d="M53.7,25c-5.5-3-10.3-1.3-10.7,4L40.3,63.7C39.9,69,44,75.8,49.4,78.9L244.3,188.8l4.2-53.8Z"
               transform="translate(78.7 -15.03)"
             />
@@ -234,27 +236,27 @@ const HeroSvg = () => {
               </g>
             </g>
             <path
-              className="cls-3"
+              className="cls-3 purple"
               d="M302.2,238.4a27.93,27.93,0,0,0,11.9-1.5c10.3-3.8,16.8-13.9,17.9-27.7,2-25.3-14.8-56.3-37.4-69.2-10.3-5.8-20.6-7.3-29.3-4.1-10.3,3.8-16.8,13.9-17.9,27.7-2,25.3,14.8,56.3,37.4,69.2A45.68,45.68,0,0,0,302.2,238.4ZM276.9,138.1a36.53,36.53,0,0,1,15,5c21.4,12.2,37.2,41.6,35.3,65.7-1,12.4-6.5,21.3-15.3,24.5-7,2.6-15.7,1.2-24.5-3.8-21.4-12.1-37.3-41.6-35.4-65.7,1-12.4,6.5-21.3,15.3-24.5A23.75,23.75,0,0,1,276.9,138.1Z"
               transform="translate(78.7 -15.03)"
             />
             <path
-              className="cls-3"
+              className="cls-3 purple"
               d="M307.2,175.1a27.38,27.38,0,0,0,14.5-2.8l-2-2.4c-7.6,4-17.4,3-27.5-2.7-10.5-6-20-16.2-26.8-28.9l-3.3,1.1c7,13.2,17,23.9,28.1,30.2A41.58,41.58,0,0,0,307.2,175.1Z"
               transform="translate(78.7 -15.03)"
             />
             <path
-              className="cls-3"
+              className="cls-3 purple"
               d="M314,234.5l3.3-1.1c-7-13.2-17-23.9-28.1-30.2-11.4-6.5-22.6-7.5-31.5-2.8l2,2.4c7.6-4,17.4-3,27.5,2.7C297.8,211.5,307.3,221.8,314,234.5Z"
               transform="translate(78.7 -15.03)"
             />
             <path
-              className="cls-3"
+              className="cls-3 purple"
               d="M290.5,234a11.46,11.46,0,0,0,4.9-.7c8.7-3.2,15-16.7,16.4-35.3,2-25.6-5.7-50.9-17.6-57.7a11.68,11.68,0,0,0-10.3-1c-8.7,3.2-15,16.7-16.4,35.3-2,25.6,5.7,50.9,17.6,57.7A12.68,12.68,0,0,0,290.5,234Zm-1.9-92.5a7.35,7.35,0,0,1,3.6,1.2c10.6,6,17.9,31.2,16.1,55.1-1.5,19.6-8.4,30.7-14.4,33a7.87,7.87,0,0,1-6.7-.7c-10.6-6-17.9-31.2-16.1-55.1,1.5-19.6,8.4-30.7,14.4-33a6.55,6.55,0,0,1,3.1-.5Z"
               transform="translate(78.7 -15.03)"
             />
             <rect
-              className="cls-3"
+              className="cls-3 purple"
               x="244.76"
               y="184.56"
               width="89.9"
@@ -262,7 +264,7 @@ const HeroSvg = () => {
               transform="translate(159.84 445.49) rotate(-85.49)"
             />
             <polygon
-              className="cls-3"
+              className="cls-3 purple"
               points="410.8 192.47 331.3 147.37 329.4 149.67 408.8 194.77 410.8 192.47"
             />
           </g>
@@ -322,7 +324,7 @@ const HeroSvg = () => {
       </g>
       <g id="freepik--Character--inject-2">
         <path
-          className="cls-4"
+          className="cls-4 green"
           d="M139,309.8c-8.5,2.9-30.4,17.7-30.4,17.7l-.1,12.1,35.2,20.6,3.3-10.7s24.4-8.4,33.4-14.7,1.2-15.4-16-24.1C154.3,305.7,147.6,306.9,139,309.8Z"
           transform="translate(78.7 -15.03)"
         />
@@ -416,12 +418,12 @@ const HeroSvg = () => {
             transform="translate(78.7 -15.03)"
           />
           <path
-            className="cls-6"
+            className="cls-6 blue"
             d="M150.9,325l-36.4,45.6s-1.9,3.5-2.9,1.6c0,0-7.4-32.9-8.2-42.5-.6-7.1.3-10.3,3-12.8,9.3-8.5,32.2-21.5,38.7-26.3Z"
             transform="translate(78.7 -15.03)"
           />
           <path
-            className="cls-6"
+            className="cls-6 blue"
             d="M117,337.1a12.06,12.06,0,0,1,5-7.5c8.4-6.5,20.5-16.3,22.6-18.2-1.1-2.3-2.6-8.6-1.1-12.7,0,0,1.8,10.8,5.5,13.9h0s-27.3,42.4-35.7,49.3C113.1,360.2,115.2,346.1,117,337.1Z"
             transform="translate(78.7 -15.03)"
           />
@@ -431,7 +433,7 @@ const HeroSvg = () => {
             transform="translate(78.7 -15.03)"
           />
           <path
-            className="cls-6"
+            className="cls-6 blue"
             d="M147.8,312.5s-19.7,14.7-24.1,18.6c-5.1,4.5-5.2,6.7-6.2,10.8-1.7,7.4-9.9,48.4-9.9,48.4,5.8,5.1,14.5,4.3,14.5,4.3s1.2-2.6,6.9-14.5c5.8-12.2,6-16.8,7-22.6,1-5.6,2.1-9.9,4.2-10.8,2.9-1.4,17.1-7.2,28.8-12.8,12.1-5.9,14.8-10.7,17.2-15.2s3.1-8.9,5.4-17.4l-46.4-10.6h0C140.1,301.9,147.8,312.5,147.8,312.5Z"
             transform="translate(78.7 -15.03)"
           />
@@ -529,7 +531,7 @@ const HeroSvg = () => {
             data-name="freepik--laptop--inject-2"
           >
             <path
-              className="cls-4"
+              className="cls-4 green"
               d="M142.2,340.4l29.4-16.7a.1.1,0,0,0,.1-.1.44.44,0,0,0-.1-.5l-40.2-23.6c-8.9,5.6-19.4,12.3-25,17.4-.5.5-1,1.1-1.5,1.7Z"
               transform="translate(78.7 -15.03)"
             />
