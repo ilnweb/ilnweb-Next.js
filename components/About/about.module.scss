@@ -1,5 +1,5 @@
 .about {
-  min-height: 40rem;
+  min-height: 50rem;
   background-color: lightgray;
   display: flex;
   padding: 10rem 0rem;
@@ -15,7 +15,7 @@
 
     &-left {
       width: 50%;
-      padding: 3rem 4rem 0 3rem;
+      padding: 3rem 8rem 0 3rem;
     }
 
     &-right {
@@ -25,17 +25,17 @@
       align-items: center;
       justify-content: center;
       // background-color:yellowgreen;
-      overflow: hidden;
     }
   }
 
   .img {
     opacity: 0;
+    filter:grayscale(1)
   }
 
   .image-show {
     opacity: 0;
-    animation: imageUp .5s ease-out .5s forwards;
+    animation: imageUp .3s ease-out 1s forwards;
   }
 
   @keyframes imageUp {
@@ -46,36 +46,36 @@
 
     to {
       transform: translateY(0rem);
-      opacity: .9;
+      opacity: .8;
     }
   }
 
   &-line {
     position: absolute;
     left: 2rem;
-    bottom: -24rem;
+    bottom: -15rem;
     width: 100%;
-    height: 30rem;
+    height: 20rem;
     background-color: lightgray;
     border-top: 1px solid black;
     z-index: 10;
     opacity: 0;
-
-    &-animation{
-      animation: lineSide .5s ease-out forwards;
-    }
+    transform: translateX(-10rem) translateY(5rem) rotate(-10deg);
+    
   }
 
-
+  .about-line-animation{
+    animation: lineSide .3s ease-in-out .3s forwards;
+  }
 
   @keyframes lineSide {
     from {
-      transform:translateX(-21rem) translateY(8rem) rotate(-13deg);
+      transform:translateX(-10rem)  rotate(-10deg);
       opacity: 0;
     }
 
     to {
-      transform: translateY(0rem) rotate(-13deg);
+      transform: translateY(0rem)   rotate(-10deg);
       opacity: 1;
     }
   }
