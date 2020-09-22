@@ -9,10 +9,14 @@ const About = () => {
     setView(true);
   };
 
+  const handleWaypointLeave = () => {
+    setView(false);
+  };
+
   return (
     <div className="about">
       <h1>About</h1>
-      <Waypoint onEnter={handleWaypointEnter} />
+      <Waypoint onEnter={handleWaypointEnter} onLeave={handleWaypointLeave}/>
       <div className="about-content">
         <div className="about-content-left">
           <h1>Hi, my name is ILIYAN TSACHEV</h1>

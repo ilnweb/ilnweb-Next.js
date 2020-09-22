@@ -33,7 +33,7 @@
 }
   .image-show{
     opacity: 0;
-    animation: pp .7s cubic-bezier(0.45, 0.25, 0.60, 0.95) forwards;
+    animation: pp .5s ease-out .5s forwards;
   }
 
   @keyframes pp {
