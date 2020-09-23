@@ -120,7 +120,7 @@ const Skills = () => {
     <div className="skills">
       <h1 className="color-white">Skills</h1>
       <p className="color-white">
-        Here are some of my besht skills and technologies that im user and I
+        Here are some of my best skills and technologies that im user and I
         love
       </p>
       <Waypoint onEnter={handleWaypointEnter} onLeave={handleWaypointLeave} />

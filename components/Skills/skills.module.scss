@@ -1,6 +1,7 @@
+@import 'style/variables.module.scss';
 .skills {
   min-height: 30rem;
-  background-color: lightcoral;
+  background-color: $purple;
   padding: 14rem 5rem;
   display: flex;
   align-items: center;

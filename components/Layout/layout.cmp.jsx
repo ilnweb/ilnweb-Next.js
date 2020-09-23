@@ -14,7 +14,9 @@ export default function Layout({ children, title = "ilnweb" }) {
       </Head>
       <Header />
       {children}
-      <footer className="footer">{"I`m here to stay"}</footer>
+      <footer className="footer">
+        
+      </footer>
     </div>
   );
 }
