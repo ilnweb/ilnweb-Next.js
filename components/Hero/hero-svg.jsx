@@ -324,7 +324,7 @@ const HeroSvg = () => {
       </g>
       <g id="freepik--Character--inject-2">
         <path
-          className="cls-4 green"
+          className="cls-4 purple"
           d="M139,309.8c-8.5,2.9-30.4,17.7-30.4,17.7l-.1,12.1,35.2,20.6,3.3-10.7s24.4-8.4,33.4-14.7,1.2-15.4-16-24.1C154.3,305.7,147.6,306.9,139,309.8Z"
           transform="translate(78.7 -15.03)"
         />
