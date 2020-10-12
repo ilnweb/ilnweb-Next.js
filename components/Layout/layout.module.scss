@@ -1,4 +1,8 @@
-.footer{
-  min-height: 30rem;
-  background-color:rgb(255, 255, 255);
+.footer {
+  min-height: 20rem;
+  background-color: rgb(255, 255, 255);
+  padding: 6rem 3rem;
+  margin: 0 10%;
+  display:flex;
+  justify-content: space-between;
 }
