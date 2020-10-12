@@ -27,11 +27,11 @@ export default function Layout({ children, title = "ilnweb" }) {
           <p>+48 791724341</p>
         </div>
         <div>
-          <p>Email:</p>
+          <p><strong>Email:</strong></p>
           <p>iliyan.tsachev@ilnweb.com</p>
         </div>
         <div>
-          <p>Social Links:</p>
+          <p><strong>Social Links:</strong></p>
           <FaGithub className="footer-icon" />
           <FaFacebook className="footer-icon" />
           <FaLinkedinIn className="footer-icon" />
