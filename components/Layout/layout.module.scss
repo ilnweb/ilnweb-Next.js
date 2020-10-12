@@ -5,4 +5,9 @@
   margin: 0 10%;
   display:flex;
   justify-content: space-between;
+
+  &-icon{
+    font-size: 2rem;
+    margin:1rem;
+  }
 }

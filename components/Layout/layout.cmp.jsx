@@ -3,9 +3,7 @@ import Head from "next/head";
 import Header from "../Header/header.cmp";
 import "./layout.module.scss";
 import Logo from "../Logo/logo.cmp";
-import { FaGithub,FaFacebook } from 'react-icons/fa';
-import { FaGithub } from 'react-icons/fa';
-import { FaGithub } from 'react-icons/fa';
+import { FaGithub, FaFacebook, FaLinkedinIn } from "react-icons/fa";
 
 export default function Layout({ children, title = "ilnweb" }) {
   return (
@@ -33,7 +31,10 @@ export default function Layout({ children, title = "ilnweb" }) {
           <p>iliyan.tsachev@ilnweb.com</p>
         </div>
         <div>
-          
+          <p>Social Links:</p>
+          <FaGithub className="footer-icon" />
+          <FaFacebook className="footer-icon" />
+          <FaLinkedinIn className="footer-icon" />
         </div>
       </footer>
     </div>
