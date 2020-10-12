@@ -8,40 +8,5 @@
   position: relative;
   z-index:10;
 
-  .ilnlogo {
-    width: 30rem;
-    position: relative;
-  }
-
-  .logo {
-    width: 12rem;
-  }
-
-  .logo_square {
-    position: absolute;
-    height: .4rem;
-    width: .4rem;
-    background-color: #7CBD1E;
-    top: .8rem;
-    left: .62rem;
-    animation: logoGlow 3s linear 2s infinite;
-  }
-
-  @keyframes logoGlow {
-    0% {
-      background-color: #7CBD1E;
-    }
-
-    25% {
-      background-color: #fcff3a;
-    }
-
-    50% {
-      background-color: #ff00ff;
-    }
-
-    100% {
-      background-color: #7CBD1E;
-    }
-  }
+  
 }
