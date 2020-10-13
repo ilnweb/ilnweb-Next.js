@@ -17,6 +17,16 @@
 
   }
 
+  &-side-effect{
+    font-size:100rem;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left:-50rem;
+    fill: linear-gradient(225deg,#00dcc0 0,#3a86ff  75%);
+    color:#3a85ff93;
+  }
+
   p {
     color: white !important;
   }

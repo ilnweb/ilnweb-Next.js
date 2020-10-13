@@ -8,6 +8,7 @@ import { BsPentagonFill } from "react-icons/bs";
 import { Waypoint } from "react-waypoint";
 import Link from "next/link";
 import ReactPlayer from "react-player";
+import {RiCheckboxBlankCircleLine} from "react-icons/ri";
 
 const Portfolio = () => {
   const [inView, setView] = useState(false);
@@ -72,6 +73,7 @@ const Portfolio = () => {
 
   return (
     <div className="portfolio">
+      <RiCheckboxBlankCircleLine className="portfolio-side-effect" />
       <h1 className="portfolio-title">Check out some of my work </h1>
       <p className="subtitle">
         Here you can see some of my favorite project and explore techologies
