@@ -6,10 +6,16 @@
   }
 
   &-list > * {
-    padding-left:4rem;
+    padding: 1rem 1.5rem;
     color:rgb(255, 255, 255);
     cursor: pointer;
     font-weight: 700;
     font-size: 1.3rem;
+    
+
+    
+  }
+  &-list:hover > *{
+    border-bottom: 3px solid red;
   }
 }
