@@ -1,0 +1,15 @@
+.nav-desk {
+
+  &-list {
+    display: flex;
+    list-style: none;
+  }
+
+  &-list > * {
+    padding-left:4rem;
+    color:rgb(255, 255, 255);
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 1.3rem;
+  }
+}
