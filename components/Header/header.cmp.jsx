@@ -5,7 +5,9 @@ const Header = () => {
   return (
       <div className="header">
         <Logo/>
-        <button className="button-primary">Hire me now!</button>
+      {
+        // <button className="button-primary">Hire me now!</button>
+      }
       </div>
   );
 };
