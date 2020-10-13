@@ -22,19 +22,29 @@ export default function Layout({ children, title = "ilnweb" }) {
       <footer className="footer">
         <div>
           <Logo />
-          <p>- Copyright © 2020 ilnweb ---</p>
+          <p>Copyright © 2020 ilnweb All rights reserved</p>
           <p>Warsaw, Poland</p>
           <p>+48 791724341</p>
         </div>
         <div>
-          <p><strong>Email:</strong></p>
+          <p>
+            <strong>Email:</strong>
+          </p>
           <p>iliyan.tsachev@ilnweb.com</p>
         </div>
         <div>
-          <p><strong>Social Links:</strong></p>
-          <FaGithub className="footer-icon" />
-          <FaFacebook className="footer-icon" />
-          <FaLinkedinIn className="footer-icon" />
+          <p>
+            <strong>Social Links:</strong>
+          </p>
+          <a href="https://github.com/ilnweb" target="blank">
+            <FaGithub className="footer-icon" />
+          </a>
+          <a href="https://www.facebook.com/ilnweb" target="blank">
+            <FaFacebook className="footer-icon" />
+          </a>
+          <a href="https://www.linkedin.com/in/iliyan-tsachev/" target="blank">
+            <FaLinkedinIn className="footer-icon" />
+          </a>
         </div>
       </footer>
     </div>
