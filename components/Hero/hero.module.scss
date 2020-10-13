@@ -124,6 +124,8 @@
     width: 70%;
     z-index: -1;
     border-bottom-left-radius:200px ;
+    clip-path: polygon(0 0,100% 0,100% calc(100% - 3em),6.25em 100%,0 100%);
+
   }
 
   &_content {
