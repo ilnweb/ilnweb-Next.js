@@ -18,13 +18,24 @@
   }
 
   &-side-effect{
-    font-size:100rem;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    width: 100rem;
+    height:100rem;
     position: absolute;
     z-index: -1;
-    top: 0;
+    top: 13rem;
     left:-50rem;
-    fill: linear-gradient(225deg,#00dcc0 0,#3a86ff  75%);
-    color:#3a85ff93;
+    background: linear-gradient(225deg,#3a86ff 0, #00dcc0   75%);
+    border-radius:100%;
+
+    &-inner{
+      width: 80rem;
+      height: 80rem;
+      border-radius:100%;
+      background-color:$purple;
+    }
   }
 
   p {

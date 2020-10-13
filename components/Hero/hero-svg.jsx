@@ -42,7 +42,6 @@ const HeroSvg = () => {
           transform="translate(-219.88 512.08) rotate(-89.63)"
         />
       </g>
-      
       <g id="freepik--Device--inject-2">
         <g id="freepik--Laptop--inject-2" >
           <path
