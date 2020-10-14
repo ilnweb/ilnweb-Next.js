@@ -1,3 +1,5 @@
+@import 'style/variables.module.scss';
+
 .about {
   min-height: 40rem;
   background-color: white;
@@ -49,6 +51,18 @@
       opacity: 1;
     }
   }
+
+  &-image--frame{
+    height: 25rem;
+    width: 25rem;
+    overflow: hidden;
+    border:5px solid $pink;
+    border-radius:100%;
+    display: flex;
+    align-items:flex-end;
+    justify-content: center;
+  }
+ 
 
   &-line {
     position: absolute;

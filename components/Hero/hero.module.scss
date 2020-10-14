@@ -120,8 +120,8 @@
     top:0;
     right:0;
     background: linear-gradient(225deg,#00dcc0 0,#3a86ff  75%);
-    height: 60%;
-    width: 70%;
+    height: 75%;
+    width: 95%;
     z-index: -1;
     border-bottom-left-radius:100px ;
     clip-path: polygon(0 0,100% 0,100% calc(100% - 3em),6.25em 100%,0 100%);
@@ -136,7 +136,7 @@
     &-left {
       display: flex;
       flex-direction: column;
-      justify-content:center;
+      justify-content:flex-start;
       padding: 0rem 0rem 0 3rem;
       width: 50%;
       .subtitle {

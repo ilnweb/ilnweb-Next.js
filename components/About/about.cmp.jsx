@@ -32,16 +32,15 @@ const About = () => {
         </div>
 
         <div className="about-content-right">
-          <div className="portfolio-side-effect"/>
-          <div
-            className={`about-line ${inView ? "about-line-animation" : ""}`}
-          />
-          <img
-            className={`img ${inView ? "image-show" : ""}`}
-            style={{ width: "90%" }}
-            src="https://res.cloudinary.com/ilnphotography/image/upload/v1600702880/ilnweb/shadow_zsw6h2_royosx.png"
-            alt=""
-          />
+          <div className="portfolio-side-effect" />
+          <div className="about-image--frame">
+            <img
+              className={`img ${inView ? "image-show" : ""}`}
+              style={{ width: "90%" }}
+              src="https://res.cloudinary.com/ilnphotography/image/upload/v1600702880/ilnweb/shadow_zsw6h2_royosx.png"
+              alt=""
+            />
+          </div>
         </div>
       </div>
     </div>
