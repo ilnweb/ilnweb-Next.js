@@ -17,19 +17,19 @@ const Portfolio = () => {
     {
       url:
         "https://res.cloudinary.com/ilnphotography/video/upload/v1598539103/ilnweb/Together_-_Google_Chrome_2020-08-27_16-09-19_1_cjiujt.mp4",
-      height: "400px",
+      height: "500px",
       fade: false,
     },
     {
       url:
         "https://res.cloudinary.com/ilnphotography/video/upload/v1600094361/ilnweb/React_App_-_Google_Chrome_2020-09-14_16-24-37_1_ecbta2.mp4",
-      height: "280px",
+      height: "350px",
       fade: false,
     },
     {
       url:
         "https://res.cloudinary.com/ilnphotography/video/upload/v1598457283/ilnweb/Qizify_vaqgnv.mp4",
-      height: "280px",
+      height: "350px",
       fade: false,
     },
   ]);
@@ -101,7 +101,6 @@ const Portfolio = () => {
               <ReactPlayer
                 style={{ borderRadius: "2px", overflow: "hidden" }}
                 height={video.height}
-                width={"auto"}
                 muted={true}
                 playing={false}
                 url={video.url}
