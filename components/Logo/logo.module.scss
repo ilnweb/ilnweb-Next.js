@@ -11,7 +11,7 @@
   position: absolute;
   height: .4rem;
   width: .4rem;
-  background-color: #7CBD1E;
+  background-color: #ff006e;
   top: .8rem;
   left: .62rem;
   animation: logoGlow 3s linear 2s infinite;
@@ -19,18 +19,18 @@
 
 @keyframes logoGlow {
   0% {
-    background-color: #7CBD1E;
+    background-color: #ff006e;
   }
 
   25% {
-    background-color: #fcff3a;
+    background-color: #fcff3ad7;
   }
 
   50% {
-    background-color: #ff00ff;
+    background-color: #00dcc0;
   }
 
   100% {
-    background-color: #7CBD1E;
+    background-color: #ff006e;
   }
 }
