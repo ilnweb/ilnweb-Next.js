@@ -1,16 +1,55 @@
 @import 'style/variables.module.scss';
 
 .footer {
+  position: relative;
   min-height: 15rem;
   background-color: rgb(255, 255, 255);
-  padding: 6rem 3rem;
-  margin: 0 10%;
+  padding: 6rem 20% 0;
   display:flex;
   justify-content: space-between;
+  z-index: 1;
 
   &-icon{
     font-size: 2rem;
     margin-right:2rem;
     color:$purple;
   }
+
+  .waves{
+    position: absolute;
+    width: 100%;
+    bottom: -2rem;
+    left: 0;
+  }
+  .waves svg{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    animation-name: move-left;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    z-index: -1;
+  }
+  .spacer{
+    height: 100px;
+    width: 100%;
+  }
+  
+  @keyframes example {
+    0%   {
+      left:0px;
+      top:0px;}
+    
+    50%  {
+      left:-2000px;
+      top:200px;}
+    
+    100% {
+      left:0px; 
+      top:0px;}
+  }
+  
+  
 }

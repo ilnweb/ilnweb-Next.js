@@ -23,7 +23,8 @@
     right:-20rem;
     transform: rotate(45deg);
     clip-path: polygon(48% 0, 0% 100%, 17% 100%, 49% 26%, 46% 21%, 76% 86%, 10% 86%, 12% 100%, 100% 100%, 48% 0);
-    background: linear-gradient(225deg,#00dcc0 0,#3a86ff  75%);
+    background: linear-gradient(225deg,#00dcc0 0,#3a86ff  90%);
+    opacity: .8;
   }
 
   &-icons-wrap{
