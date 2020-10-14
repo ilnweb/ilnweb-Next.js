@@ -37,16 +37,6 @@
     color: white !important;
   }
 
-  &-content {
-    position: relative;
-    margin: 3rem 10% 0;
-    width: 30rem;
-    height: 30rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
   &_backround {
     position: absolute;
     left: 50%;
@@ -64,7 +54,15 @@
 
   }
 
-
+  &-content {
+    position: relative;
+    margin: 3rem 10% 0;
+    width: 37rem;
+    height: 37rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
   &_circle-1,
   &_circle-2,
@@ -82,19 +80,19 @@
   }
 
   &_circle-1 {
-    width: 30rem;
-    height: 30rem;
+    width: 37rem;
+    height: 37rem;
     animation: rotate 40s linear infinite;
   }
 
   &_circle-2 {
-    width: 22rem;
-    height: 22rem;
+    width: 30rem;
+    height: 30rem;
   }
 
   &_circle-3 {
-    width: 15rem;
-    height: 15rem;
+    width: 23rem;
+    height: 23rem;
   }
 
   .circle-icon {
@@ -104,13 +102,13 @@
   }
 
   .circle-icon-1 {
-    left: 163px;
+    left: 208px;
     top: 0;
   }
 
   .circle-icon-2 {
-    right: 13px;
-    bottom: 81px;
+    top: 24px;
+    right: 108px;
   }
 
   .circle-icon-3 {
@@ -122,14 +120,14 @@
 
   .circle-icon-4 {
     font-size: 1rem;
-    left: 44px;
+    left: 75px;
     bottom: 81px;
 
   }
 
   .circle-icon-5 {
     font-size: 1.2rem;
-    right: -4px;
+    right: 9px;
     bottom: 183px;
   }
 
