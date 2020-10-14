@@ -24,10 +24,6 @@ h1{
   font-weight: 700;
 }
 
-.h1-white{
-  color:$white;
-}
-
 a{
   color: inherit;
 }
@@ -82,7 +78,7 @@ p{
 }
 
 .color-white{
-  color:white;
+  color:$white;
 }
 
 .button-primary{
