@@ -76,8 +76,8 @@ const Portfolio = () => {
       <div className="portfolio-side-effect" >
         <div className="portfolio-side-effect-inner"></div>
       </div>
-      <h1 className="portfolio-title">Check out some of my work </h1>
-      <p className="subtitle">
+      <h1 className="color-white">Check out some of my work </h1>
+      <p className="subtitle color-white">
         Here you can see some of my favorite project and explore techologies
         used, video preview and link to the actual project.
       </p>

@@ -21,7 +21,7 @@ const Hero = () => {
         <div className="hero_content">
         
           <div className="hero_content-left">
-            <h1 className="color-white">Web developement professional freelance services</h1>
+            <h1 className="color-white">I make your websites too much good!</h1>
             <p className="subtitle color-white">
               Show your bussines sucsees with a great and modern Progressive Web
               App, Single page Application or Web Site
