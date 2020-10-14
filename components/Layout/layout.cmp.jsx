@@ -16,6 +16,7 @@ export default function Layout({ children, title = "ilnweb" }) {
           href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;700&display=swap"
           rel="stylesheet"
         />
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap" rel="stylesheet"></link>
       </Head>
       <Header />
       {children}

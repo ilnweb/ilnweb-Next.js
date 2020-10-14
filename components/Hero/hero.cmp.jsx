@@ -1,6 +1,5 @@
 import { useState } from "react";
 import "./hero.module.scss";
-import Particles from "react-particles-js";
 import Herosvg from "../Hero/hero-svg";
 import { Waypoint } from "react-waypoint";
 import { MdKeyboardArrowDown } from "react-icons/md";
@@ -17,7 +16,7 @@ const Hero = () => {
   return (
     <div className="hero-wrap">
       <div className="hero">
-        <div className="hero-backround"></div>
+        <div className="hero-backround"/>
         <div className="hero_content">
         
           <div className="hero_content-left">
