@@ -22,7 +22,7 @@ const Portfolio = () => {
     },
     {
       url:
-        "https://res.cloudinary.com/ilnphotography/video/upload/v1600094361/ilnweb/React_App_-_Google_Chrome_2020-09-14_16-24-37_1_ecbta2.mp4",
+        "https://res.cloudinary.com/ilnphotography/video/upload/v1602693766/ilnweb/React_App_-_Google_Chrome_2020-09-14_16-24-37_ha7sqa.mp4",
       height: "350px",
       fade: false,
     },
