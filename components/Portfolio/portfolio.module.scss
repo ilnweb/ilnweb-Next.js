@@ -150,8 +150,19 @@
     position: absolute;
   }
 
+  .video-container{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+  }
+
   &-video > div > video{
     width: auto!important;
+    border-radius:20px;
+  }
+
+  &-video-border >div > video{
+    border-radius:40px!important;
   }
 
 

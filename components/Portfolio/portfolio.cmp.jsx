@@ -16,24 +16,24 @@ const Portfolio = () => {
   const [videos, setVideos] = useState([
     {
       url:
-        "https://res.cloudinary.com/ilnphotography/video/upload/v1602772400/ilnweb/React_App_-_Google_Chrome_2020-10-15_15-59-53_1_t9i6vq.mp4",
+        "https://res.cloudinary.com/ilnphotography/video/upload/v1602776907/ilnweb/React_App_-_Google_Chrome_2020-10-15_15-59-53_2_pi0hkg.mp4",
       height: "500px",
       fade: false,
-      radius:"30px"
+      radius:true
     },
     {
       url:
         "https://res.cloudinary.com/ilnphotography/video/upload/v1602770096/ilnweb/Qizify_wabljm.mp4",
       height: "350px",
       fade: false,
-      radius:"10px"
+      radius:false
     },
     {
       url:
         "https://res.cloudinary.com/ilnphotography/video/upload/v1602771016/ilnweb/React_App_-_Google_Chrome_2020-10-15_15-59-53_ndvman.mp4",
       height: "350px",
       fade: false,
-      radius:"10px"
+      radius:false
     },
   ]);
 
@@ -69,7 +69,7 @@ const Portfolio = () => {
         videosToLoop[current].childNodes[0].childNodes[0] &&
           videosToLoop[current].childNodes[0].childNodes[0].play();
         videosToLoop[current].classList.remove("video-fadeout");
-      }, 11000);
+      }, 12000);
       return () => clearInterval(interval);
     }
   }, [videoLoop, inView]);
@@ -100,9 +100,9 @@ const Portfolio = () => {
         </div>
         <div className="portfolio-videos" ref={videoLoop}>
           {videos.map((video, i) => (
-            <div key={i} className="portfolio-video">
+            <div key={i} className={`portfolio-video ${video.radius? "portfolio-video-radius":""}`}>
               <ReactPlayer
-                style={{borderRadius:`${video.radius}`}}
+                className="video-container"
                 height={video.height}
                 muted={true}
                 playing={false}
