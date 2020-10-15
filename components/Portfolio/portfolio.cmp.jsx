@@ -22,13 +22,13 @@ const Portfolio = () => {
     },
     {
       url:
-        "https://res.cloudinary.com/ilnphotography/video/upload/v1602693766/ilnweb/React_App_-_Google_Chrome_2020-09-14_16-24-37_ha7sqa.mp4",
+        "https://res.cloudinary.com/ilnphotography/video/upload/v1602770096/ilnweb/Qizify_wabljm.mp4",
       height: "350px",
       fade: false,
     },
     {
       url:
-        "https://res.cloudinary.com/ilnphotography/video/upload/v1598457283/ilnweb/Qizify_vaqgnv.mp4",
+        "https://res.cloudinary.com/ilnphotography/video/upload/v1602771016/ilnweb/React_App_-_Google_Chrome_2020-10-15_15-59-53_ndvman.mp4",
       height: "350px",
       fade: false,
     },
@@ -66,7 +66,7 @@ const Portfolio = () => {
         videosToLoop[current].childNodes[0].childNodes[0] &&
           videosToLoop[current].childNodes[0].childNodes[0].play();
         videosToLoop[current].classList.remove("video-fadeout");
-      }, 4800);
+      }, 11000);
       return () => clearInterval(interval);
     }
   }, [videoLoop, inView]);
@@ -99,7 +99,7 @@ const Portfolio = () => {
           {videos.map((video, i) => (
             <div key={i} className="portfolio-video">
               <ReactPlayer
-                style={{ borderRadius: "2px", overflow: "hidden" }}
+                style={{ borderRadius: "10px", overflow: "hidden" }}
                 height={video.height}
                 muted={true}
                 playing={false}
