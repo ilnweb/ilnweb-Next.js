@@ -16,21 +16,24 @@ const Portfolio = () => {
   const [videos, setVideos] = useState([
     {
       url:
-        "https://res.cloudinary.com/ilnphotography/video/upload/v1598539103/ilnweb/Together_-_Google_Chrome_2020-08-27_16-09-19_1_cjiujt.mp4",
+        "https://res.cloudinary.com/ilnphotography/video/upload/v1602772400/ilnweb/React_App_-_Google_Chrome_2020-10-15_15-59-53_1_t9i6vq.mp4",
       height: "500px",
       fade: false,
+      radius:"30px"
     },
     {
       url:
         "https://res.cloudinary.com/ilnphotography/video/upload/v1602770096/ilnweb/Qizify_wabljm.mp4",
       height: "350px",
       fade: false,
+      radius:"10px"
     },
     {
       url:
         "https://res.cloudinary.com/ilnphotography/video/upload/v1602771016/ilnweb/React_App_-_Google_Chrome_2020-10-15_15-59-53_ndvman.mp4",
       height: "350px",
       fade: false,
+      radius:"10px"
     },
   ]);
 
@@ -99,7 +102,7 @@ const Portfolio = () => {
           {videos.map((video, i) => (
             <div key={i} className="portfolio-video">
               <ReactPlayer
-                style={{ borderRadius: "10px", overflow: "hidden" }}
+                style={{borderRadius:`${video.radius}`}}
                 height={video.height}
                 muted={true}
                 playing={false}
