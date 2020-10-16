@@ -7,14 +7,13 @@
     display: flex;
 
     &-left,  &-right{
-     
-     
+      width: 50%;
       display: flex;
     }
 
     &-left{
       justify-content: flex-end;
-      width: 60%;
+
       img{
         width: 100%;
         height: auto;
@@ -22,7 +21,6 @@
     }
 
     &-right {
-      width: 40%;
       margin-left: 3rem;
       justify-content: flex-start;
       flex-direction: column;
