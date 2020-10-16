@@ -14,9 +14,7 @@ const Portfolio = () => {
         </div>
         <div className="porfolio-page_item">
           <div className="porfolio-page_item-left">
-            <div>
-              <img src="https://res.cloudinary.com/ilnphotography/image/upload/v1602842853/ilnweb/Qizify-back_khzxwd.png" alt="Qizify-logo" />
-              </div>
+           
           </div>
           <div className="porfolio-page_item-right">
             <h3 style={{color:"grey",marginTop:"0rem"}}>Qizify</h3>
