@@ -13,13 +13,10 @@
 
     &-left{
       justify-content: flex-end;
-      background-image: url("https://res.cloudinary.com/ilnphotography/image/upload/v1602862319/ilnweb/Qizify-back2_k2pjfp.png");
+      // background-image: url("https://res.cloudinary.com/ilnphotography/image/upload/v1602862319/ilnweb/Qizify-back2_k2pjfp.png");
       background-size:contain;
       background-repeat: no-repeat;
-      img{
-        width: 100%;
-        height: auto;
-      }
+      position: relative;
     }
 
     &-right {
@@ -38,4 +35,24 @@
     }
 
   }
+}
+
+.desctop, .mobile{
+ 
+  position: absolute;
+  z-index: 10;
+  
+  border-radius: 5px;
+}
+
+.desctop{
+  width: 20rem;
+  top:50%;
+  left:10%;
+}
+
+.mobile{
+  top:20%;
+  left:60%;
+  width: 10rem;
 }
