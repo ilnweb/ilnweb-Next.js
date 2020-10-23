@@ -21,8 +21,8 @@ const Portfolio = () => {
           <div className="porfolio-page_item-left">
             <div>
               <img
-                style={{ width: "100%"}}
-                src="https://res.cloudinary.com/ilnphotography/image/upload/v1602862319/ilnweb/Qizify-back2_k2pjfp.png"
+                style={{ width: "120%"}}
+                src="https://res.cloudinary.com/ilnphotography/image/upload/v1603459424/ilnweb/dev_kyj8jl.png"
               />
               <img
                 className="desctop"
@@ -98,15 +98,7 @@ const Portfolio = () => {
           <div>
             <img
               style={{ width: "100%"}}
-              src="https://res.cloudinary.com/ilnphotography/image/upload/v1603450112/ilnweb/Artboard_1_usldor.png"
-            />
-            <img
-              className="desctop"
-              src="https://res.cloudinary.com/ilnphotography/image/upload/v1602862830/ilnweb/Screenshot_221_rk9fxf.png"
-            />
-            <img
-              className="mobile"
-              src="https://res.cloudinary.com/ilnphotography/image/upload/v1602862830/ilnweb/Screenshot_2020-10-16_173816_weptbq.png"
+              src="https://res.cloudinary.com/ilnphotography/image/upload/v1603459424/ilnweb/dev_kyj8jl.png"
             />
           </div>
         </div>
