@@ -1,11 +1,14 @@
 .porfolio-page {
   min-height: 150vh;
   padding: 0 12%;
-  background-color:#222b30;
 
   &_item {
-    margin-top: 15rem;
+    padding-top: 15rem;
     display: flex;
+    background-image:url("https://res.cloudinary.com/ilnphotography/image/upload/v1603459424/ilnweb/dev_kyj8jl.png");
+    background-size:60%;
+    background-repeat:no-repeat;
+    background-position:center;
 
     &-left,  &-right{
       width: 50%;

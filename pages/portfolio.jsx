@@ -20,12 +20,9 @@ const Portfolio = () => {
         <div className="porfolio-page_item">
           <div className="porfolio-page_item-left">
             <div>
+              
               <img
-                style={{ width: "120%"}}
-                src="https://res.cloudinary.com/ilnphotography/image/upload/v1603459424/ilnweb/dev_kyj8jl.png"
-              />
-              <img
-                className="desctop"
+                className="desctop" style={{border:"3px solid white"}}
                 src="https://res.cloudinary.com/ilnphotography/image/upload/v1602862830/ilnweb/Screenshot_221_rk9fxf.png"
               />
               <img
@@ -96,10 +93,7 @@ const Portfolio = () => {
         <div className="porfolio-page_item">
         <div className="porfolio-page_item-left">
           <div>
-            <img
-              style={{ width: "100%"}}
-              src="https://res.cloudinary.com/ilnphotography/image/upload/v1603459424/ilnweb/dev_kyj8jl.png"
-            />
+            
           </div>
         </div>
         <div className="porfolio-page_item-right">
