@@ -6,7 +6,7 @@
   }
 
   &_item:nth-child(even) {
-   
+
     flex-direction: row-reverse;
     background-color: #35434a11;
 
@@ -29,7 +29,7 @@
     background-repeat: no-repeat;
     background-position: center;
     justify-content: center;
-    align-items:center;
+    align-items: center;
 
     &-left,
     &-right {
@@ -42,7 +42,7 @@
       background-repeat: no-repeat;
       position: relative;
 
-      &_backround{
+      &_backround {
         width: 100%;
         max-width: 37rem;
       }
@@ -53,14 +53,17 @@
       margin-right: 3rem;
       justify-content: flex-start;
       flex-direction: column;
+ 
 
-      h2 {
+      h1 {
+        font-size: 2.5rem;
         margin: 0;
       }
 
       p {
-        font-size: .9rem;
+        font-size: 1.2rem;
         margin-bottom: 2rem;
+        color:grey;
       }
     }
 
@@ -75,15 +78,15 @@
 }
 
 .desctop {
-  width: 50%;
+  width: 85%;
   top: 50%;
   left: 10%;
-  max-width: 20rem;
+  max-width: 25rem;
 }
 
 .mobile {
   top: 20%;
   left: 60%;
-  width: 30%;
+  width: 40%;
   max-width: 12rem;
 }
