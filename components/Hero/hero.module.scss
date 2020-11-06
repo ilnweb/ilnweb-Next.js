@@ -46,48 +46,6 @@
     font-weight: 700;
   }
 
-  .svg-plant-1{
-    animation: plantmove1 15s cubic-bezier(.36,.07,.19,.97) infinite;
-    transform-origin: center;
-  }
-
-  @keyframes plantmove1 {
-    0% {
-      transform: rotate(0deg);
-    }
-    10% {
-      transform: rotate(-1deg);
-    }
-    20% {
-      transform: rotate(1deg);
-    }
-    30% {
-      transform: rotate(0deg);
-    }
-    40% {
-      transform: rotate(1deg);
-    }
-    50% {
-      transform: rotate(1deg);
-    }
-    60% {
-      transform: rotate(-1deg);
-    }
-    70% {
-      transform: rotate(1deg);
-    }
-    80% {
-      transform: rotate(1deg);
-    }
-    90% {
-      transform: rotate(0);
-    }
-    100% {
-      transform: rotate(1deg);
-    }
-  }
- 
-
   .hand {
     fill: red;
     transform: translateY(0);

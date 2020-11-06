@@ -21,7 +21,7 @@ const Portfolio = () => {
           <div className="porfolio-page_item-left">
             <div>
               <img
-                style={{ width: "100%" }}
+                style={{ width: "80%" }}
                 src="https://res.cloudinary.com/ilnphotography/image/upload/v1604651204/ilnweb/triangle1_x9yzum.png"
               />
               <img
