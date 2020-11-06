@@ -98,7 +98,21 @@ const Portfolio = () => {
         </div>
         <div className="porfolio-page_item">
           <div className="porfolio-page_item-left">
-            <div></div>
+            <div>
+            <img
+            style={{ width: "100%" }}
+            src="https://res.cloudinary.com/ilnphotography/image/upload/v1604654596/ilnweb/squaire1_nszow7.png"
+          />
+          <img
+            className="desctop"
+            style={{ border: "3px solid white" }}
+            src="https://res.cloudinary.com/ilnphotography/image/upload/v1602862830/ilnweb/Screenshot_221_rk9fxf.png"
+          />
+          <img
+            className="mobile"
+            style={{ border: "3px solid white" }}
+            src="https://res.cloudinary.com/ilnphotography/image/upload/v1602862830/ilnweb/Screenshot_2020-10-16_173816_weptbq.png"
+          /></div>
           </div>
           <div className="porfolio-page_item-right">
             <h3 style={{ color: "grey", marginTop: "0rem" }}>Qizify</h3>
