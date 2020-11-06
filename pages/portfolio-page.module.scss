@@ -71,22 +71,83 @@
 }
 
 .desctop,
-.mobile {
+.mobile,
+.mobileOnly {
   position: absolute;
   z-index: 10;
   border-radius: 5px;
+  opacity: 0;
 }
 
 .desctop {
   width: 85%;
   top: 50%;
-  left: 10%;
+  left: 0;
   max-width: 25rem;
 }
 
+.mobileOnly {
+  width: 40%;
+  bottom: 10%;
+  left: 15%;
+  max-width: 12rem;
+}
+
 .mobile {
-  top: 20%;
+  top: 10%;
   left: 60%;
   width: 40%;
   max-width: 12rem;
+}
+
+.desctopInview{
+  animation:opacity 1s forwards, desctopInview 40s linear infinite;
+}
+.mobileInview {
+  animation:opacity 2s forwards, mobileInview 40s linear infinite;
+}
+
+.mobileOnlyInview {
+  animation:opacity 2s forwards, mobileInviewOnly 40s linear infinite;
+}
+
+
+@keyframes opacity {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
+@keyframes mobileInviewOnly {
+  50%{
+    transform: translateY(-7rem);
+  }
+  100%{
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+@keyframes desctopInview {
+  50%{
+    transform: translateY(-8rem);
+  }
+  100%{
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes mobileInview {
+  50%{
+    transform: translateY(5rem);
+  }
+  100%{
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
