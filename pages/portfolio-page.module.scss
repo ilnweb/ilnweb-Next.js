@@ -1,25 +1,51 @@
-.porfolio-page {
+.portfolio-page {
   min-height: 150vh;
-  padding: 0 12%;
+
+  &-hero {
+    padding: 0 12%;
+  }
+
+  &_item:nth-child(even) {
+   
+    flex-direction: row-reverse;
+    background-color: #35434a11;
+
+    &-left {
+      justify-content: flex-start;
+    }
+
+  }
+
+  &_item:first-child {
+
+    padding-top: 15rem;
+  }
 
   &_item {
-    padding-top: 15rem;
-    display: flex;
-    background-size:65%;
-    background-repeat:no-repeat;
-    background-position:center;
+    padding: 7rem 12%;
 
-    &-left,  &-right{
+    display: flex;
+    background-size: 65%;
+    background-repeat: no-repeat;
+    background-position: center;
+    justify-content: center;
+    align-items:center;
+
+    &-left,
+    &-right {
       width: 50%;
       display: flex;
     }
 
-    &-left{
+    &-left {
       justify-content: flex-end;
-      // background-image: url("https://res.cloudinary.com/ilnphotography/image/upload/v1602862319/ilnweb/Qizify-back2_k2pjfp.png");
-      background-size:contain;
       background-repeat: no-repeat;
       position: relative;
+
+      &_backround{
+        width: 100%;
+        max-width: 37rem;
+      }
     }
 
     &-right {
@@ -28,11 +54,11 @@
       justify-content: flex-start;
       flex-direction: column;
 
-      h2{
+      h2 {
         margin: 0;
       }
 
-      p{
+      p {
         font-size: .9rem;
         margin-bottom: 2rem;
       }
@@ -41,22 +67,23 @@
   }
 }
 
-.desctop, .mobile{
- 
+.desctop,
+.mobile {
   position: absolute;
   z-index: 10;
-  
   border-radius: 5px;
 }
 
-.desctop{
-  width: 20rem;
-  top:50%;
-  left:10%;
+.desctop {
+  width: 50%;
+  top: 50%;
+  left: 10%;
+  max-width: 20rem;
 }
 
-.mobile{
-  top:20%;
-  left:60%;
-  width: 10rem;
+.mobile {
+  top: 20%;
+  left: 60%;
+  width: 30%;
+  max-width: 12rem;
 }
