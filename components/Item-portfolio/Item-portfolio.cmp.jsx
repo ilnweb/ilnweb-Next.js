@@ -12,37 +12,41 @@ const ItemPortfolio = ({ item }) => {
   };
   return (
     <div className="portfolio-page_item">
-    <Waypoint onEnter={handleWaypointEnter} onLeave={handleWaypointLeave} />
-    <div className="portfolio-page_item-left">
-      <div>
-        {
+      <Waypoint onEnter={handleWaypointEnter} onLeave={handleWaypointLeave} />
+      <div className="portfolio-page_item-left">
+        <div>
+          {
+            <img
+              className="portfolio-page_item-left_backround"
+              src={item.background}
+            />
+          }
           <img
-            className="portfolio-page_item-left_backround"
-            src={item.background}
+            className={`${item.mobileOnly ? "mobileOnly" : "desctop"} ${
+              inView
+                ? item.mobile
+                  ? "mobileOnlyInview"
+                  : "opacity desctopInview "
+                : ""
+            }`}
+            src={item.desctop}
           />
-        }
-        <img
-          className={`${item.mobileOnly ? "mobileOnly":"desctop"} ${inView ? item.mobile?"mobileOnlyInview": "opacity desctopInview ":""}`}
-          src={item.desctop}
-        />
-        <img
-          className={`mobile ${inView ? "opacity mobileInview opacity":""}`}
-          src={item.mobile}
-        />
+          <img
+            className={`mobile ${inView ? "opacity mobileInview opacity" : ""}`}
+            src={item.mobile}
+          />
+        </div>
+      </div>
+      <div className="portfolio-page_item-right">
+        <h2>{item.title}</h2>
+        <h1>{item.subTitle}</h1>
+        <p>{item.description}</p>
+        <a href={item.link} target="blank">
+          <button className="button-secondary">{item.buttonName}</button>
+        </a>
       </div>
     </div>
-    <div className="portfolio-page_item-right">
-      <h2 >{item.title}</h2>
-      <h1>
-        {item.subTitle}
-      </h1>
-      <p>
-        {item.description}
-      </p>
-      <button className="button-secondary">View Project</button>
-    </div>
-    </div>
-  )
+  );
 };
 
 export default ItemPortfolio;
