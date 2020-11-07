@@ -32,7 +32,7 @@ const ItemPortfolio = ({ item }) => {
       </div>
     </div>
     <div className="portfolio-page_item-right">
-      <h2 style={{ color: "#00dcc0", marginBootom: "20px" }}>{item.title}</h2>
+      <h2 >{item.title}</h2>
       <h1>
         {item.subTitle}
       </h1>
