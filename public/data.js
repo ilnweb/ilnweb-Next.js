@@ -17,7 +17,7 @@ export const portfolioData = [
   {
     title: "Devster",
     subTitle:
-      "Social media application inspired by my favorite sited Medium and DEV.",
+      "A platform where developers can share coding skills and experience.",
     background:
       "https://res.cloudinary.com/ilnphotography/image/upload/v1604651204/ilnweb/triangle1_x9yzum.png",
     desctop:
@@ -27,7 +27,7 @@ export const portfolioData = [
       "https://res.cloudinary.com/ilnphotography/image/upload/v1604675650/ilnweb/Screenshot_233_vgkwya.png",
 
     description:
-      "Dev SOcial Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap",
+      "Devster is an open source platform that was inspired by my favorite reading sites Medium and Dev. It started as a practise for my back-end skills but it became a well structured application ready to scale. After showing it to other developers we decided to try and create Bulgaria's first platform for sharing knowledge.",
     buttonName: "View code",
     link: "https://github.com/ilnweb/dev-social",
   },
