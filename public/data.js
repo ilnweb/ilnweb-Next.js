@@ -80,7 +80,7 @@ export const portfolioData = [
     title: "The Design House",
     subTitle: "Dubai based inderior designer's showcase website.",
     background:
-      "https://res.cloudinary.com/ilnphotography/image/upload/v1604652911/ilnweb/circle1_evxgd9.png",
+      "https://res.cloudinary.com/ilnphotography/image/upload/v1604654596/ilnweb/squaire1_nszow7.png",
     desctop:
       "https://res.cloudinary.com/ilnphotography/image/upload/v1604763196/ilnweb/Screenshot_240_jh5bj8.png",
     mobile:
