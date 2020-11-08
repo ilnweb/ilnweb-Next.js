@@ -72,7 +72,7 @@ export const portfolioData = [
     mobile:
       "https://res.cloudinary.com/ilnphotography/image/upload/v1602862830/ilnweb/Screenshot_2020-10-16_173816_weptbq.png",
     description:
-      "Crown Clothing is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap",
+      "This page was one of my first projects with React. I created a portfolio page for my favorite hobby Photography. I used Cloudinary to host all my pictures and set up a reausable gallery component that displays filtered images depending on whitch secrion you clicked.",
     buttonName: "View project",
     link: "https://iliyan-tsachev-live.netlify.app/",
   },
