@@ -16,9 +16,8 @@ const Hero = () => {
   return (
     <div className="hero-wrap">
       <div className="hero">
-        <div className="hero-backround"/>
+        <div className="hero-backround" />
         <div className="hero_content">
-        
           <div className="hero_content-left">
             <h1 className="color-white">I make your websites too much good!</h1>
             <p className="subtitle color-white">
@@ -31,9 +30,11 @@ const Hero = () => {
         </div>
       </div>
       <Waypoint onEnter={handleWaypointEnter} onLeave={handleWaypointLeave} />
-      <div className="scroll-down">
-        <MdKeyboardArrowDown style={{ marginTop: ".3rem" }} />
-      </div>
+      <a href="#portfolio">
+        <div className="scroll-down">
+          <MdKeyboardArrowDown style={{ marginTop: ".3rem" }} />
+        </div>
+      </a>
     </div>
   );
 };

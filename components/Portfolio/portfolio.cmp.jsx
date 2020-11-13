@@ -8,7 +8,7 @@ import { BsPentagonFill } from "react-icons/bs";
 import { Waypoint } from "react-waypoint";
 import Link from "next/link";
 import ReactPlayer from "react-player";
-import {RiCheckboxBlankCircleLine} from "react-icons/ri";
+import { RiCheckboxBlankCircleLine } from "react-icons/ri";
 
 const Portfolio = () => {
   const [inView, setView] = useState(false);
@@ -19,21 +19,21 @@ const Portfolio = () => {
         "https://res.cloudinary.com/ilnphotography/video/upload/v1602776907/ilnweb/React_App_-_Google_Chrome_2020-10-15_15-59-53_2_pi0hkg.mp4",
       height: "500px",
       fade: false,
-      radius:true
+      radius: true,
     },
     {
       url:
         "https://res.cloudinary.com/ilnphotography/video/upload/v1602770096/ilnweb/Qizify_wabljm.mp4",
       height: "350px",
       fade: false,
-      radius:false
+      radius: false,
     },
     {
       url:
         "https://res.cloudinary.com/ilnphotography/video/upload/v1602771016/ilnweb/React_App_-_Google_Chrome_2020-10-15_15-59-53_ndvman.mp4",
       height: "350px",
       fade: false,
-      radius:false
+      radius: false,
     },
   ]);
 
@@ -75,8 +75,8 @@ const Portfolio = () => {
   }, [videoLoop, inView]);
 
   return (
-    <div className="portfolio">
-      <div className="portfolio-side-effect" >
+    <div id="portfolio" className="portfolio">
+      <div className="portfolio-side-effect">
         <div className="portfolio-side-effect-inner"></div>
       </div>
       <h1 className="color-white">Check out some of my work </h1>
@@ -100,7 +100,12 @@ const Portfolio = () => {
         </div>
         <div className="portfolio-videos" ref={videoLoop}>
           {videos.map((video, i) => (
-            <div key={i} className={`portfolio-video ${video.radius? "portfolio-video-radius":""}`}>
+            <div
+              key={i}
+              className={`portfolio-video ${
+                video.radius ? "portfolio-video-radius" : ""
+              }`}
+            >
               <ReactPlayer
                 className="video-container"
                 height={video.height}

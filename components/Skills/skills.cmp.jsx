@@ -117,7 +117,7 @@ const Skills = () => {
   };
 
   return (
-    <div className="skills">
+    <div id="skills" className="skills">
       <h1 className="color-white">Skills</h1>
       <p className="color-white">
         Here are some of my best skills and technologies that im user and I love

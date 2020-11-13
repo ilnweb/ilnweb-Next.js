@@ -4,7 +4,7 @@ import NavDesk from "../nav-desk/nav-desk.cmp";
 
 const Header = () => {
   return (
-      <div className="header">
+      <div id="header" className="header">
       <Logo />
       <NavDesk/>
       {
