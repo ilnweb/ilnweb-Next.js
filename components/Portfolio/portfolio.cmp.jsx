@@ -48,7 +48,6 @@ const Portfolio = () => {
       );
       let current = 0;
       videosToLoop[current].classList.add("video-animation");
-      console.log(videosToLoop[current].childNodes[0].childNodes[0]);
       videosToLoop[current].childNodes[0].childNodes[0] &&
         videosToLoop[current].childNodes[0].childNodes[0].play();
       const interval = setInterval(() => {
