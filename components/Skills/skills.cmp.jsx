@@ -122,9 +122,10 @@ const Skills = () => {
       <p className="color-white">
         Here are some of my best skills and technologies that im user and I love
       </p>
-      <Waypoint onEnter={handleWaypointEnter} onLeave={handleWaypointLeave} />
       <div className="skills-icons-wrap">
-      <div className="skills-side-effect"></div>
+        <div className="skills-side-effect"></div>
+      <Waypoint onEnter={handleWaypointEnter} onLeave={handleWaypointLeave} />
+        
         <div className="skills-icons" ref={skillsArray}>
           {skills.map((skill, index) => {
             let TagName = skill.url;

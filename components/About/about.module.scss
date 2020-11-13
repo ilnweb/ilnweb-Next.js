@@ -39,7 +39,7 @@
 
   .image-show {
     opacity: 0;
-    animation: imageUp .3s ease-out 1s forwards;
+    animation: imageUp .3s ease-out .3s forwards;
   }
 
   @keyframes imageUp {
