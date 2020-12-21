@@ -11,6 +11,7 @@
   margin-top: -6rem;
   background-color:$purple;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 95%);
+  
 
   &-side-effect{
     display: flex;
@@ -64,6 +65,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
   }
 
   &_circle-1,

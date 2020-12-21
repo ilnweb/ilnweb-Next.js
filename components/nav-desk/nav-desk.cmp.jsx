@@ -11,8 +11,8 @@ const NavDesk = () => {
       <ul className="nav-desk-list">
         {router.pathname === "/portfolio" ? (
           <Link href="/">
-            <li>
-              Back to Home <RiArrowGoBackLine />
+            <li className="d-flex-center">
+              Back to Home 	&nbsp; <RiArrowGoBackLine />
             </li>
           </Link>
         ) : (
@@ -20,7 +20,7 @@ const NavDesk = () => {
             <Link href="/">
               <li>Home</li>
             </Link>
-            <Link href="/portfolio">
+            <Link href="#portfolio">
               <li>Portfolio</li>
             </Link>
             <Link href="#about">

@@ -73,50 +73,54 @@ const Portfolio = () => {
   }, [videoLoop, inView]);
 
   return (
-    <div  className="portfolio">
+    <div className="portfolio">
       <div className="portfolio-side-effect">
         <div className="portfolio-side-effect-inner"></div>
       </div>
-      <h1 id="portfolio" className="color-white">Check out some of my work </h1>
+      <h1 id="portfolio" className="color-white">
+        Check out some of my work{" "}
+      </h1>
       <p className="subtitle color-white">
         Here you can see some of my favorite project and explore techologies
         used, video preview and link to the actual project.
       </p>
       <Waypoint onEnter={handleWaypointEnter} />
-      <div className="portfolio-content">
-        <div className="portfolio_backround" />
-        <div className="portfolio_circle-1">
-          <AiTwotoneStar className="circle-icon circle-icon-1" />
-          <FaDotCircle className="circle-icon circle-icon-4" />
-          <BsPentagonFill className="circle-icon circle-icon-5" />
-          <div className="portfolio_circle-2">
-            <IoMdSquare className="circle-icon circle-icon-2" />
-            <div className="portfolio_circle-3">
-              <CgShapeTriangle className="circle-icon circle-icon-3" />
+      <Link href="/portfolio">
+        <div className="portfolio-content">
+          <div className="portfolio_backround" />
+          <div className="portfolio_circle-1">
+            <AiTwotoneStar className="circle-icon circle-icon-1" />
+            <FaDotCircle className="circle-icon circle-icon-4" />
+            <BsPentagonFill className="circle-icon circle-icon-5" />
+            <div className="portfolio_circle-2">
+              <IoMdSquare className="circle-icon circle-icon-2" />
+              <div className="portfolio_circle-3">
+                <CgShapeTriangle className="circle-icon circle-icon-3" />
+              </div>
             </div>
           </div>
-        </div>
-        <div className="portfolio-videos" ref={videoLoop}>
-          {videos.map((video, i) => (
-            <div
-              key={i}
-              className={`portfolio-video ${
-                video.radius ? "portfolio-video-radius" : ""
-              }`}
-            >
-              <ReactPlayer
-                className="video-container"
-                height={video.height}
-                muted={true}
-                playing={false}
-                url={video.url}
+          <div className="portfolio-videos" ref={videoLoop}>
+            {videos.map((video, i) => (
+              <div
+                key={i}
+                className={`portfolio-video ${
+                  video.radius ? "portfolio-video-radius" : ""
+                }`}
               >
-                Your browser does not support the video tag.
-              </ReactPlayer>
-            </div>
-          ))}
+                <ReactPlayer
+                  className="video-container"
+                  height={video.height}
+                  muted={true}
+                  playing={false}
+                  url={video.url}
+                >
+                  Your browser does not support the video tag.
+                </ReactPlayer>
+              </div>
+            ))}
+          </div>
         </div>
-      </div>
+      </Link>
       <Link href="/portfolio">
         <button className="button-primary" style={{ marginTop: "6rem" }}>
           View Portfolio

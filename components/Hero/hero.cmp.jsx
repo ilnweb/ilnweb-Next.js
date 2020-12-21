@@ -22,7 +22,7 @@ const Hero = () => {
             <h1 className="color-white">I make your websites too much good!</h1>
             <p className="subtitle color-white">
               Show your bussines sucsees with a great and modern Progressive Web
-              App, Single page Application or Web Site
+              App, Single page Application or Web Site.
             </p>
             <button className="button-primary">Get a quote now!</button>
           </div>
