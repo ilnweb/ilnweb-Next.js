@@ -8,7 +8,6 @@ import { BsPentagonFill } from "react-icons/bs";
 import { Waypoint } from "react-waypoint";
 import Link from "next/link";
 import ReactPlayer from "react-player";
-import { RiCheckboxBlankCircleLine } from "react-icons/ri";
 
 const Portfolio = () => {
   const [inView, setView] = useState(false);

@@ -10,6 +10,7 @@ import {
   FaSass,
   FaWordpress,
   FaPhp,
+  FaAngular
 } from "react-icons/fa";
 import {
   SiRedux,
@@ -37,6 +38,10 @@ const Skills = () => {
     {
       url: SiRedux,
       title: "Redux",
+    },
+    {
+      url: FaAngular,
+      title: "Angular",
     },
     {
       url: SiTypescript,
@@ -80,10 +85,6 @@ const Skills = () => {
       title: "Antd Design",
     },
     {
-      url: SiBootstrap,
-      title: "Bootstrap",
-    },
-    {
       url: FaPhp,
       title: "PHP",
     },
@@ -124,8 +125,8 @@ const Skills = () => {
       </p>
       <div className="skills-icons-wrap">
         <div className="skills-side-effect"></div>
-      <Waypoint onEnter={handleWaypointEnter} onLeave={handleWaypointLeave} />
-        
+        <Waypoint onEnter={handleWaypointEnter} onLeave={handleWaypointLeave} />
+
         <div className="skills-icons" ref={skillsArray}>
           {skills.map((skill, index) => {
             let TagName = skill.url;
