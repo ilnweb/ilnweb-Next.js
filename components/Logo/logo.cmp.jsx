@@ -7,7 +7,7 @@ const Logo = () => {
       <div className="ilnlogo">
         <div className="logo_square" />
         <img
-          src="https://res.cloudinary.com/ilnphotography/image/upload/v1602679745/ilnweb/ilnLogo-grey-black_ee79eg.png"
+          src="https://res.cloudinary.com/ilnphotography/image/upload/v1602679432/ilnweb/ilnLogo_white-rkqrkr_z7dwn7.png"
           alt="ilnweblogo"
           className="logo"
         />

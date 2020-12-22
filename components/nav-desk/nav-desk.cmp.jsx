@@ -1,34 +1,36 @@
 import "./nav-desk.module.scss";
-import Link from "next/link";
+import Link from 'next/link'
 import { useRouter } from "next/router";
 import { RiArrowGoBackLine } from "react-icons/ri";
 
-const NavDesk = () => {
+
+const NavDesk = ({Scroll}) => {
   const router = useRouter();
   console.log(router.pathname);
+
   return (
     <div className="nav-desk">
       <ul className="nav-desk-list">
         {router.pathname === "/portfolio" ? (
           <Link href="/">
             <li className="d-flex-center">
-              Back to Home 	&nbsp; <RiArrowGoBackLine />
+              Back to Home &nbsp; <RiArrowGoBackLine />
             </li>
           </Link>
         ) : (
           <>
-            <Link href="/">
+            <Scroll activeClass="active" to="home">
               <li>Home</li>
-            </Link>
-            <Link href="#portfolio">
+            </Scroll>
+            <Scroll to="portfolio" spy={true} smooth={true}>
               <li>Portfolio</li>
-            </Link>
-            <Link href="#about">
+            </Scroll>
+            <Scroll to="about" spy={true} smooth={true}>
               <li>About</li>
-            </Link>
-            <Link href="#skills">
+            </Scroll>
+            <Scroll to="skills" spy={true} smooth={true}>
               <li>Skills</li>
-            </Link>
+            </Scroll>
           </>
         )}
       </ul>

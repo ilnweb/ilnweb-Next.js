@@ -10,7 +10,7 @@ import {
   FaSass,
   FaWordpress,
   FaPhp,
-  FaAngular
+  FaAngular,
 } from "react-icons/fa";
 import {
   SiRedux,

@@ -40,6 +40,10 @@ const Portfolio = () => {
     setView(true);
   };
 
+  const handleWaypointLeave = () => {
+    setView(false);
+  };
+
   useEffect(() => {
     if (inView) {
       const videosToLoop = Array.prototype.slice.call(
@@ -70,6 +74,7 @@ const Portfolio = () => {
       }, 12000);
       return () => clearInterval(interval);
     }
+    
   }, [videoLoop, inView]);
 
   return (
@@ -84,7 +89,7 @@ const Portfolio = () => {
         Here you can see some of my favorite project and explore techologies
         used, video preview and link to the actual project.
       </p>
-      <Waypoint onEnter={handleWaypointEnter} />
+      <Waypoint onEnter={handleWaypointEnter} onLeave={handleWaypointLeave} />
       <Link href="/portfolio">
         <div className="portfolio-content">
           <div className="portfolio_backround" />

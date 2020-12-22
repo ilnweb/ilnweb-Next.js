@@ -21,10 +21,10 @@ export const portfolioData = [
     background:
       "https://res.cloudinary.com/ilnphotography/image/upload/v1604651204/ilnweb/triangle1_x9yzum.png",
     desctop:
-      "https://res.cloudinary.com/ilnphotography/image/upload/v1604675232/ilnweb/Screenshot_231_df5gsn.png",
+      "https://res.cloudinary.com/ilnphotography/image/upload/v1608630570/ilnweb/Screenshot_244_rbnnnh.png",
 
     mobile:
-      "https://res.cloudinary.com/ilnphotography/image/upload/v1604675650/ilnweb/Screenshot_233_vgkwya.png",
+      "https://res.cloudinary.com/ilnphotography/image/upload/v1608630570/ilnweb/Screenshot_245_r3meeb.png",
 
     description:
       "Devster is an open source platform that was inspired by my favorite reading sites Medium and Dev. It started as a practise for my back-end skills but it became a well structured application ready to scale. After showing it to other developers we decided to try and create Bulgaria's first platform for sharing knowledge.",
@@ -49,14 +49,14 @@ export const portfolioData = [
     link: "https://together-live.netlify.app/",
   },
   {
-    title: "Crown clothing",
+    title: "Photostore",
     subTitle: "Ecommerse template perfect for small bussiness.",
     background:
       "https://res.cloudinary.com/ilnphotography/image/upload/v1604651204/ilnweb/triangle1_x9yzum.png",
     desctop:
-      "https://res.cloudinary.com/ilnphotography/image/upload/v1602862830/ilnweb/Screenshot_221_rk9fxf.png",
+      "https://res.cloudinary.com/ilnphotography/image/upload/v1608636364/ilnweb/Screenshot_251_lifrln.png",
     mobile:
-      "https://res.cloudinary.com/ilnphotography/image/upload/v1602862830/ilnweb/Screenshot_2020-10-16_173816_weptbq.png",
+      "https://res.cloudinary.com/ilnphotography/image/upload/v1608636364/ilnweb/Screenshot_250_s4w5c4.png",
     description:
       "Crown Clothing is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap",
     buttonName: "View code",
@@ -68,9 +68,10 @@ export const portfolioData = [
     background:
       "https://res.cloudinary.com/ilnphotography/image/upload/v1604652911/ilnweb/circle1_evxgd9.png",
     desctop:
-      "https://res.cloudinary.com/ilnphotography/image/upload/v1602862830/ilnweb/Screenshot_221_rk9fxf.png",
+      "https://res.cloudinary.com/ilnphotography/image/upload/v1604675232/ilnweb/Screenshot_231_df5gsn.png",
+
     mobile:
-      "https://res.cloudinary.com/ilnphotography/image/upload/v1602862830/ilnweb/Screenshot_2020-10-16_173816_weptbq.png",
+      "https://res.cloudinary.com/ilnphotography/image/upload/v1604675650/ilnweb/Screenshot_233_vgkwya.png",
     description:
       "This page was one of my first projects with React. I created a portfolio page for my favorite hobby Photography. I used Cloudinary to host all my pictures and set up a reausable gallery component that displays filtered images depending on whitch secrion you clicked.",
     buttonName: "View project",

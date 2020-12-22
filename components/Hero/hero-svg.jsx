@@ -87,7 +87,7 @@ const HeroSvg = () => {
             transform="translate(78.7 -15.03)"
           />
           <path
-            className="cls-10 purple"
+            className="cls-10 purple opacity1"
             d="M207.5,32.8l-1.1,170.4a7.63,7.63,0,0,0,3.4,6L422.2,333.6l1.1-170.4a7.63,7.63,0,0,0-3.4-6Z"
             transform="translate(78.7 -15.03)"
           />
