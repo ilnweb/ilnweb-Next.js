@@ -18,11 +18,10 @@ import {
   SiMongodb,
   SiFirebase,
   SiMaterialUi,
-  SiBootstrap,
-  SiAdobephotoshop,
-  SiLg,
+  SiAdobephotoshop
 } from "react-icons/si";
 import { AiOutlineAntDesign } from "react-icons/ai";
+import { IoLogoPwa } from "react-icons/io5";
 import { Waypoint } from "react-waypoint";
 
 const Skills = () => {
@@ -77,6 +76,10 @@ const Skills = () => {
       title: "SASS",
     },
     {
+      url: IoLogoPwa,
+      title: "PWA",
+    },
+    {
       url: SiMaterialUi,
       title: "Material UI",
     },
@@ -84,10 +87,7 @@ const Skills = () => {
       url: AiOutlineAntDesign,
       title: "Antd Design",
     },
-    {
-      url: FaPhp,
-      title: "PHP",
-    },
+   
     {
       url: FaWordpress,
       title: "WordPress",
