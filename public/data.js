@@ -42,7 +42,7 @@ export const portfolioData = [
     mobile:
       "https://res.cloudinary.com/ilnphotography/image/upload/v1604689549/ilnweb/Screenshot_235_iwf3pi.png",
     description:
-      "Togheder Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap",
+      "Togheder is a fancy To-DO list thaI created as part of my portfolio. You can use the aplication to track you personal spendins, or connect with frinds and have a group. By creating a group you can connect with as many frinds as you want, have a shared space where all can see the total amout that each user spent plus a calculated total. The group can have a shared TO-Do space wherr any one can create and edit as many list as you grouo needs.",
 
     mobileOnly: true,
     buttonName: "View project",
