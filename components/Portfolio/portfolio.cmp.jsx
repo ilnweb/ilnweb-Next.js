@@ -15,7 +15,7 @@ const Portfolio = () => {
   const [videos, setVideos] = useState([
     {
       url:
-        "https://res.cloudinary.com/ilnphotography/video/upload/v1602776907/ilnweb/React_App_-_Google_Chrome_2020-10-15_15-59-53_2_pi0hkg.mp4",
+        "https://res.cloudinary.com/ilnphotography/video/upload/v1609421120/ilnweb/Google_Pixel_XL_1_ruepen.mp4",
       height: "500px",
       fade: false,
       radius: true,

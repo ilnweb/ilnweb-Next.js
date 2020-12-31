@@ -16,13 +16,20 @@ export default function Layout({ children, title = "ilnweb" }) {
           href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;700&display=swap"
           rel="stylesheet"
         />
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap" rel="stylesheet"></link>
+        <link
+          href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap"
+          rel="stylesheet"
+        ></link>
       </Head>
       <Header />
       {children}
       <footer className="footer">
         <div>
-          <Logo />
+          <Logo
+            url={
+              "https://res.cloudinary.com/ilnphotography/image/upload/v1602679745/ilnweb/ilnLogo-grey-black_ee79eg.png"
+            }
+          />
           <p>Copyright © 2020 ilnweb All rights reserved</p>
           <p>Warsaw, Poland</p>
           <p>+48 791724341</p>
