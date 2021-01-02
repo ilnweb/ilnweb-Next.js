@@ -78,11 +78,11 @@ const Portfolio = () => {
   }, [videoLoop, inView]);
 
   return (
-    <div className="portfolio">
+    <div id="portfolio" className="portfolio">
       <div className="portfolio-side-effect">
         <div className="portfolio-side-effect-inner"></div>
       </div>
-      <h1 id="portfolio" className="color-white">
+      <h1  className="color-white">
         Check out some of my work{" "}
       </h1>
       <p className="subtitle color-white">

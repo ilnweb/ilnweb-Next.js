@@ -5,7 +5,6 @@ import { RiArrowGoBackLine } from "react-icons/ri";
 
 const NavDesk = ({ Scroll }) => {
   const router = useRouter();
- 
 
   return (
     <div className="nav-desk">
@@ -18,7 +17,13 @@ const NavDesk = ({ Scroll }) => {
           </Link>
         ) : (
           <>
-            <Scroll activeClass="active" to="home">
+            <Scroll
+              to="home"
+              spy={true}
+              smooth={true}
+              duration={500}
+              hashSpy={true}
+            >
               <li>Home</li>
             </Scroll>
             <Scroll

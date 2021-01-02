@@ -16,7 +16,7 @@ const Hero = () => {
     setView(false);
   };
   return (
-    <div className="hero-wrap">
+    <div id="home" className="hero-wrap">
       <div className="hero">
         <div className="hero-backround" />
         <div className="hero_content">
