@@ -27,7 +27,7 @@ const NavDesk = ({ Scroll }) => {
               <li>Home</li>
             </Scroll>
             <Scroll
-              to="portfolio"
+              to="portfolioo"
               spy={true}
               smooth={true}
               duration={500}
