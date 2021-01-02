@@ -42,7 +42,7 @@ export const portfolioData = [
     mobile:
       "https://res.cloudinary.com/ilnphotography/image/upload/v1604689549/ilnweb/Screenshot_235_iwf3pi.png",
     description:
-      "Togheder is a fancy To-DO list thaI created as part of my portfolio. You can use the aplication to track you personal spendins, or connect with frinds and have a group. By creating a group you can connect with as many frinds as you want, have a shared space where all can see the total amout that each user spent plus a calculated total. The group can have a shared TO-Do space wherr any one can create and edit as many list as you grouo needs.",
+      "Together is a PWA that I created as part of my portfolio. You can use the application to track your personal spendings, or connect with friends and have a group. By creating a group you can connect with as many friends as you want, have a shared space where all can see the total amount that each user spent plus a calculated total. The group can have a shared TO-Do space where anyone can create and edit as many lists as your group needs.",
 
     mobileOnly: true,
     buttonName: "View project",
